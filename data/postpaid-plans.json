@@ -1,0 +1,18 @@
+{
+  "offer": "Special offer for Airtel Wi-Fi/DTH customers: ₹100 off every month on all the plans below.",
+  "rows": [
+    {"label":"Monthly Rental","values":["₹449","₹549","₹699","₹999","₹1,199","₹1,749"]},
+    {"label":"High-speed unlimited data","values":["✓","✓","✓","✓","✓","✓"]},
+    {"label":"Unlimited calling","values":["✓","✓","✓","✓","✓","✓"]},
+    {"label":"Free add-on connections","values":["—","—","1 Free","2 Free","3 Free","4 Free"]},
+    {"label":"Xstream Play","values":["3 Months","3 Months","3 Months","Unlimited","Unlimited","Unlimited"]},
+    {"label":"JioHotstar","values":["3 Months","1 Year","1 Year","1 Year","1 Year","1 Year"]},
+    {"label":"Prime Video","values":["—","6 Months","6 Months","6 Months","6 Months","6 Months"]},
+    {"label":"Apple TV+","values":["—","—","—","✓","✓","✓"]},
+    {"label":"Apple Music","values":["—","—","—","✓","✓","✓"]},
+    {"label":"Netflix","values":["—","—","—","—","—","Standard, Unlimited"]},
+    {"label":"Google One (cloud storage)","values":["6 Months","6 Months","6 Months","6 Months","6 Months","6 Months"]},
+    {"label":"Adobe Express","values":["✓","✓","✓","✓","✓","✓"]}
+  ],
+  "headers": ["Individual","Individual","Family of 2","Family of 3","Family of 4","Family of 5"]
+}

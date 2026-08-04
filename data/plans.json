@@ -1,0 +1,8 @@
+[
+  {"name":"Basic","speed":"40","unit":"Mbps","price":"₹499","period":"/mo","features":["Unlimited data","Free installation"],"featured":false},
+  {"name":"Popular","speed":"100","unit":"Mbps","price":"₹799","period":"/mo","features":["Unlimited data","Free router","Priority support"],"featured":true},
+  {"name":"TV Basic","speed":"30","unit":"Mbps","price":"₹599","period":"/mo","features":["Unlimited data","+ TV connection"],"featured":false},
+  {"name":"TV Plus","speed":"100","unit":"Mbps","price":"₹899","period":"/mo","features":["Unlimited data","+ TV connection","OTT apps"],"featured":false},
+  {"name":"TV Pro","speed":"100","unit":"Mbps","price":"₹1,199","period":"/mo","features":["Unlimited data","+ TV connection","10+ OTT apps"],"featured":false},
+  {"name":"TV Max","speed":"300","unit":"Mbps","price":"₹1,599","period":"/mo","features":["Unlimited data","+ TV connection","All OTT apps"],"featured":false}
+]

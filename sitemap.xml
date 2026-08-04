@@ -1,60 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-<loc>https://YOUR-DOMAIN/</loc>
-<priority>1.0</priority>
-</url>
-
-<url>
-<loc>https://YOUR-DOMAIN/fiber.html</loc>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>https://YOUR-DOMAIN/airfiber.html</loc>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>https://YOUR-DOMAIN/plans.html</loc>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>https://YOUR-DOMAIN/business.html</loc>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>https://YOUR-DOMAIN/postpaid.html</loc>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>https://YOUR-DOMAIN/blog.html</loc>
-<priority>0.8</priority>
-</url>
-
-<url>
-<loc>https://YOUR-DOMAIN/contact.html</loc>
-<priority>0.8</priority>
-</url>
-
-<url>
-<loc>https://YOUR-DOMAIN/privacy.html</loc>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://YOUR-DOMAIN/terms.html</loc>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://YOUR-DOMAIN/disclaimer.html</loc>
-<priority>0.5</priority>
-</url>
-
+  <url>
+    <loc>https://manojairtelwifi.com/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/fiber.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/airfiber.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/business-internet.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/postpaid.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/plans.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/blog.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/blog/fiber-vs-airfiber-sonipat.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/blog/best-wifi-work-from-home-sonipat.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/sonipat.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/kundli.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/rai.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/murthal.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/kharkhoda.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/ganaur.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/gohana.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/barhi.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/privacy-policy.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/terms.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://manojairtelwifi.com/disclaimer.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.5</priority>
+  </url>
 </urlset>
