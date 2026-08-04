@@ -139,9 +139,12 @@ loadJSON('data/postpaid-plans.json').then(data => {
   table.innerHTML = headHtml + bodyHtml;
 });
 
-// ===== Social links in footer =====
+// ===== Social links + business name in footer/header =====
 loadJSON('data/settings.json').then(s => {
   if (!s) return;
+  if (s.businessNameHtml) {
+    document.querySelectorAll('.js-logo').forEach(el => { el.innerHTML = s.businessNameHtml; });
+  }
   const row = document.getElementById('socialRow');
   const links = {
     facebook: 'Facebook', instagram: 'Instagram', linkedin: 'LinkedIn',

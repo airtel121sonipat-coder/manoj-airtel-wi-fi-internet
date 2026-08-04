@@ -21,3 +21,7 @@ Baad mein Claude se bologe to wo aapke liye naya page bana dega — bas content 
 3. Pencil (✏️) icon pe click karo
 4. Text change karo, neeche "Commit changes" pe click karo
 5. 1-2 minute mein website automatically update ho jaayegi
+
+## 5. Business ka naam change karna (poori website mein ek saath)
+`data/settings.json` kholo, `businessNameHtml` wali line edit karo — jo bhi naam likhoge, header aur footer dono jagah, sab pages pe automatically update ho jaayega. Example:
+`"businessNameHtml": "MANOJ <span>AIRTEL</span> WI-FI INTERNET"` — jo `<span>` ke andar hai wo red color mein dikhega.
