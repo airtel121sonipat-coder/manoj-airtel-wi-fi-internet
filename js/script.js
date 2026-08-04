@@ -1,3 +1,16 @@
+// ===== Lead form → WhatsApp =====
+const leadForm = document.getElementById('leadForm');
+if (leadForm) {
+  leadForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('leadName').value.trim();
+    const phone = document.getElementById('leadPhone').value.trim();
+    const service = document.getElementById('leadService').value;
+    const msg = `Hello, my name is ${name} (${phone}). I'm interested in ${service}. Please call me back.`;
+    window.open(`https://wa.me/919255820000?text=${encodeURIComponent(msg)}`, '_blank');
+  });
+}
+
 // ===== Mobile nav toggle =====
 const navToggle = document.getElementById('navToggle');
 const nav = document.getElementById('nav');
@@ -50,6 +63,7 @@ async function loadJSON(path) {
 loadJSON('data/services.json').then(items => {
   if (!items) return;
   const grid = document.getElementById('servicesGrid');
+  if (!grid) return;
   grid.innerHTML = items.map(s => `
     <a class="card" href="${s.link}">
       <span class="tag">${s.tag}</span>
@@ -62,6 +76,7 @@ loadJSON('data/services.json').then(items => {
 loadJSON('data/plans.json').then(items => {
   if (!items) return;
   const grid = document.getElementById('plansGrid');
+  if (!grid) return;
   grid.innerHTML = items.map(p => `
     <div class="plan-card ${p.featured ? 'featured' : ''}">
       ${p.featured ? '<span class="plan-badge">Most Popular</span>' : ''}
@@ -75,23 +90,54 @@ loadJSON('data/plans.json').then(items => {
 // ===== OTT =====
 loadJSON('data/ott.json').then(items => {
   if (!items) return;
-  document.getElementById('ottList').innerHTML = items.map(o => `<li>${o}</li>`).join('');
+  (document.getElementById('ottList') || {}).innerHTML = items.map(o => `<li>${o}</li>`).join('');
 });
 
 // ===== Gallery =====
 loadJSON('data/gallery.json').then(items => {
   if (!items) return;
   const grid = document.getElementById('galleryGrid');
+  if (!grid) return;
   grid.innerHTML = items.map(g => g.src
     ? `<figure><img src="${g.src}" alt="${g.alt}" loading="lazy"></figure>`
     : `<figure>${g.alt} — add photo</figure>`
   ).join('');
+  // Simple lightbox on click
+  let overlay = document.querySelector('.lightbox-overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.innerHTML = '<button class="lightbox-close" aria-label="Close">×</button><img alt="">';
+    document.body.appendChild(overlay);
+    overlay.addEventListener('click', () => overlay.classList.remove('open'));
+  }
+  grid.querySelectorAll('figure img').forEach(img => {
+    img.addEventListener('click', () => {
+      overlay.querySelector('img').src = img.src;
+      overlay.querySelector('img').alt = img.alt;
+      overlay.classList.add('open');
+    });
+  });
 });
+
+// ===== Back to top =====
+(function(){
+  const btn = document.createElement('button');
+  btn.className = 'back-to-top';
+  btn.setAttribute('aria-label', 'Back to top');
+  btn.textContent = '↑';
+  document.body.appendChild(btn);
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('show', window.scrollY > 500);
+  });
+  btn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+})();
 
 // ===== Reviews =====
 loadJSON('data/reviews.json').then(items => {
   if (!items) return;
   const grid = document.getElementById('reviewGrid');
+  if (!grid) return;
   grid.innerHTML = items.map(r => `
     <div class="review-card">
       <div class="stars">★★★★★</div>
@@ -104,9 +150,10 @@ loadJSON('data/reviews.json').then(items => {
 loadJSON('data/faq.json').then(items => {
   if (!items) return;
   const list = document.getElementById('faqList');
+  if (!list) return;
   list.innerHTML = items.map((f, i) => `
     <div class="faq-item ${i === 0 ? 'open' : ''}">
-      <button class="faq-q">${f.q}<span class="faq-icon">${i === 0 ? '−' : '+'}</span></button>
+      <button class="faq-q" aria-expanded="${i === 0 ? 'true' : 'false'}">${f.q}<span class="faq-icon">${i === 0 ? '−' : '+'}</span></button>
       <div class="faq-a">${f.a}</div>
     </div>`).join('');
   list.querySelectorAll('.faq-item').forEach(item => {
@@ -115,13 +162,29 @@ loadJSON('data/faq.json').then(items => {
       list.querySelectorAll('.faq-item').forEach(i => {
         i.classList.remove('open');
         i.querySelector('.faq-icon').textContent = '+';
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
       });
       if (!isOpen) {
         item.classList.add('open');
         item.querySelector('.faq-icon').textContent = '−';
+        item.querySelector('.faq-q').setAttribute('aria-expanded', 'true');
       }
     });
   });
+  // Inject FAQ schema for Google rich results
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": items.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
+    }))
+  };
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
 });
 
 // ===== Postpaid comparison table =====
