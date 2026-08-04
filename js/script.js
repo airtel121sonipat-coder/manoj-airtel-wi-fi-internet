@@ -211,10 +211,25 @@ loadJSON('data/settings.json').then(s => {
   const row = document.getElementById('socialRow');
   const links = {
     facebook: 'Facebook', instagram: 'Instagram', linkedin: 'LinkedIn',
-    youtube: 'YouTube', x: 'X', gbp: 'Google'
+    x: 'X', pinterest: 'Pinterest', tumblr: 'Tumblr', gbp: 'Google Reviews',
+    apple: 'Apple Maps', sulekha: 'Sulekha'
   };
   row.innerHTML = Object.entries(links)
     .filter(([key]) => s.social[key])
     .map(([key, label]) => `<a href="${s.social[key]}" target="_blank" rel="noopener">${label}</a>`)
     .join('') || '<span style="font-size:.8rem;color:#8B8894">Add links in data/settings.json</span>';
+
+  // Visible icon row on homepage (near hero)
+  const iconRow = document.getElementById('socialIconRow');
+  if (iconRow) {
+    const icons = {
+      gbp: '⭐', facebook: 'f', instagram: '📷', x: '𝕏',
+      linkedin: 'in', pinterest: 'P', tumblr: 't'
+    };
+    const iconLabels = { gbp: 'Google Reviews', facebook: 'Facebook', instagram: 'Instagram', x: 'X', linkedin: 'LinkedIn', pinterest: 'Pinterest', tumblr: 'Tumblr' };
+    iconRow.innerHTML = Object.entries(icons)
+      .filter(([key]) => s.social[key])
+      .map(([key, glyph]) => `<a href="${s.social[key]}" target="_blank" rel="noopener" class="social-icon${key === 'gbp' ? ' social-icon-google' : ''}" aria-label="${iconLabels[key]}" title="${iconLabels[key]}">${glyph}</a>`)
+      .join('');
+  }
 });
