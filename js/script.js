@@ -1,3 +1,18 @@
+// ===== Helper: fetch JSON safely (path-aware for subfolders like /blog/) =====
+const DATA_BASE = window.location.pathname.includes('/blog/') ? '../' : '';
+async function loadJSON(path) {
+  const fullPath = DATA_BASE + path;
+  try {
+    const res = await fetch(fullPath);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    console.log('[loadJSON] OK:', fullPath);
+    return await res.json();
+  } catch (e) {
+    console.error('[loadJSON] FAILED:', fullPath, '—', e.message);
+    return null;
+  }
+}
+
 // ===== Lead form → WhatsApp =====
 const leadForm = document.getElementById('leadForm');
 if (leadForm) {
@@ -102,19 +117,6 @@ function animateCounters() {
 }
 animateCounters();
 
-// ===== Helper: fetch JSON safely (path-aware for subfolders like /blog/) =====
-const DATA_BASE = window.location.pathname.includes('/blog/') ? '../' : '';
-async function loadJSON(path) {
-  try {
-    const res = await fetch(DATA_BASE + path);
-    if (!res.ok) throw new Error('not found');
-    return await res.json();
-  } catch (e) {
-    console.warn('Could not load', path, e);
-    return null;
-  }
-}
-
 // ===== Services =====
 loadJSON('data/services.json').then(items => {
   if (!items) return;
@@ -141,9 +143,11 @@ loadJSON('data/gallery.json').then(items => {
   if (!items) return;
   const grid = document.getElementById('galleryGrid');
   if (!grid) return;
-  grid.innerHTML = items.map(g => g.src
-    ? `<figure><img src="${g.src}" alt="${g.alt}" loading="lazy"></figure>`
-    : `<figure>${g.alt} — add photo</figure>`
+  grid.innerHTML = items.map(g => `
+    <figure>
+      <img src="${g.image}" alt="${g.title}" loading="lazy" onerror="this.closest('figure').style.display='none'">
+      <figcaption>${g.description || ''}</figcaption>
+    </figure>`
   ).join('');
   // Simple lightbox on click
   let overlay = document.querySelector('.lightbox-overlay');
