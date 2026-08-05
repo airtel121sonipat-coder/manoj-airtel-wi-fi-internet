@@ -66,7 +66,14 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .l3{top:80%;animation-delay:3s;}
 @keyframes pulse{0%,100%{opacity:.15;transform:translateX(-4%);}50%{opacity:.6;transform:translateX(4%);}}
 @media (prefers-reduced-motion:reduce){.pulse-line{animation:none;}}
-.hero-inner{position:relative;z-index:1;max-width:720px;}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr;gap:2rem;}
+.hero-text{max-width:640px;}
+.hero-visual{display:none;}
+@media (min-width:900px){
+  .hero-inner{grid-template-columns:1.15fr 1fr;align-items:center;}
+  .hero-visual{display:block;}
+  .hero-visual img{width:100%;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.12);border:1px solid var(--line);}
+}
 .eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin-bottom:.9rem;}
 .hero h1{font-size:2.5rem;color:var(--ink);}
 .hero h1 em{color:var(--red);font-style:normal;}
@@ -105,9 +112,11 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .section h2{font-size:1.9rem;max-width:640px;margin-left:auto;margin-right:auto;}
 .section-note{max-width:520px;margin:0 auto 1rem;}
 .section .eyebrow.center{color:var(--red-dark);}
-.about-features{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin:1.6rem 0;}
-.about-feature{display:flex;align-items:center;gap:.5rem;background:#fff;border:1px solid var(--line);border-radius:30px;padding:.7rem 1.3rem;font-size:.92rem;box-shadow:0 2px 6px rgba(0,0,0,.04);}
-.about-feature-icon{font-size:1.2rem;}
+.about-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin:2rem 0 1.5rem;text-align:left;}
+.about-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;box-shadow:0 2px 8px rgba(0,0,0,.04);}
+.about-card-icon{font-size:1.7rem;display:block;margin-bottom:.6rem;}
+.about-card h3{font-size:1.05rem;margin-bottom:.4rem;}
+.about-card p{font-size:.92rem;margin:0;}
 
 /* Cards */
 .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:2.2rem;}
