@@ -66,6 +66,7 @@ loadJSON('data/services.json').then(items => {
   if (!grid) return;
   grid.innerHTML = items.map(s => `
     <a class="card" href="${s.link}">
+      <span class="card-icon">${s.icon || ''}</span>
       <span class="tag">${s.tag}</span>
       <h3>${s.title}</h3>
       <p>${s.desc}</p>
@@ -223,13 +224,13 @@ loadJSON('data/settings.json').then(s => {
   const iconRow = document.getElementById('socialIconRow');
   if (iconRow) {
     const icons = {
-      gbp: '⭐', facebook: 'f', instagram: '📷', x: '𝕏',
+      gbp: '★', facebook: 'f', instagram: '📷', x: '𝕏',
       linkedin: 'in', pinterest: 'P', tumblr: 't'
     };
     const iconLabels = { gbp: 'Google Reviews', facebook: 'Facebook', instagram: 'Instagram', x: 'X', linkedin: 'LinkedIn', pinterest: 'Pinterest', tumblr: 'Tumblr' };
     iconRow.innerHTML = Object.entries(icons)
       .filter(([key]) => s.social[key])
-      .map(([key, glyph]) => `<a href="${s.social[key]}" target="_blank" rel="noopener" class="social-icon${key === 'gbp' ? ' social-icon-google' : ''}" aria-label="${iconLabels[key]}" title="${iconLabels[key]}">${glyph}</a>`)
+      .map(([key, glyph]) => `<a href="${s.social[key]}" target="_blank" rel="noopener" class="social-icon social-icon-${key}" aria-label="${iconLabels[key]}" title="${iconLabels[key]}">${glyph}</a>`)
       .join('');
   }
 });

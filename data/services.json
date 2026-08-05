@@ -1,8 +1,8 @@
 [
-  {"tag":"Home & Business","title":"Airtel Xstream Fiber","desc":"Unlimited wired fiber internet with speeds up to 1 Gbps.","link":"fiber.html"},
-  {"tag":"Wireless","title":"Airtel AirFiber","desc":"High-speed wireless broadband — no cable digging required.","link":"airfiber.html"},
-  {"tag":"Mobile","title":"Postpaid SIM & MNP","desc":"New postpaid connections and number porting, same day.","link":"postpaid.html"},
-  {"tag":"Enterprise","title":"Business Leased Line","desc":"Dedicated Internet Leased Line (ILL) with static IP for offices.","link":"business-internet.html"},
-  {"tag":"Security","title":"CCTV Installation","desc":"CCTV setup and maintenance for homes and shops.","link":"business-internet.html"},
-  {"tag":"Corporate","title":"Corporate SIM Plans","desc":"Bulk postpaid plans for teams and businesses.","link":"postpaid.html"}
+  {"icon":"📡","tag":"Home & Business","title":"Airtel Xstream Fiber","desc":"Unlimited wired fiber internet with speeds up to 1 Gbps.","link":"fiber.html"},
+  {"icon":"📶","tag":"Wireless","title":"Airtel AirFiber","desc":"High-speed wireless broadband — no cable digging required.","link":"airfiber.html"},
+  {"icon":"📱","tag":"Mobile","title":"Postpaid SIM & MNP","desc":"New postpaid connections and number porting, same day.","link":"postpaid.html"},
+  {"icon":"🏢","tag":"Enterprise","title":"Business Leased Line","desc":"Dedicated Internet Leased Line (ILL) with static IP for offices.","link":"business-internet.html"},
+  {"icon":"🎥","tag":"Security","title":"CCTV Installation","desc":"CCTV setup and maintenance for homes and shops.","link":"business-internet.html"},
+  {"icon":"👥","tag":"Corporate","title":"Corporate SIM Plans","desc":"Bulk postpaid plans for teams and businesses.","link":"postpaid.html"}
 ]
