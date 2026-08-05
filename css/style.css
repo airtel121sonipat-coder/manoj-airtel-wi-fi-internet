@@ -127,6 +127,9 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .card .tag{font-family:var(--mono);font-size:.72rem;color:var(--red);text-transform:uppercase;letter-spacing:.05em;}
 
 /* Plans */
+.plan-tabs{display:flex;justify-content:center;gap:.6rem;margin:1.6rem 0 0;}
+.plan-tab{padding:.7rem 1.6rem;border-radius:30px;border:1.5px solid var(--line);background:#fff;font-weight:600;font-size:.92rem;cursor:pointer;color:var(--slate);}
+.plan-tab.active{background:var(--red);border-color:var(--red);color:#fff;}
 .plan-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem;margin-top:2rem;}
 .plan-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.8rem;position:relative;}
 .plan-card.featured{border-color:var(--red);box-shadow:0 8px 24px rgba(222,31,53,.12);}
@@ -134,9 +137,11 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .plan-speed{font-family:var(--mono);font-size:2rem;font-weight:600;color:var(--ink);}
 .plan-speed small{font-size:1rem;color:var(--slate);font-weight:500;}
 .plan-price{font-family:var(--mono);font-size:1.2rem;color:var(--red-dark);margin:.5rem 0 1rem;}
-.plan-features{list-style:none;padding:0;margin:0 0 1.4rem;font-size:.9rem;color:var(--slate);}
+.plan-features{list-style:none;padding:0;margin:0 0 1.2rem;font-size:.9rem;color:var(--slate);}
 .plan-features li{padding:.3rem 0;border-top:1px solid var(--line);}
 .plan-features li:first-child{border-top:none;}
+.ott-badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.2rem;}
+.ott-badge{color:#fff;font-size:.68rem;font-weight:600;padding:.3rem .6rem;border-radius:6px;}
 
 /* OTT */
 .ott{background:var(--ink);color:#fff;}

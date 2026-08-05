@@ -69,7 +69,14 @@
       <p class="eyebrow center">Broadband</p>
       <h2 class="center">Fiber &amp; AirFiber plans</h2>
       <p class="section-note center">Prices are indicative — confirm your final plan on WhatsApp before booking.</p>
-      <div class="plan-grid" id="plansGrid"></div>
+      <div class="plan-tabs">
+        <button id="tabFiber" class="plan-tab active">Fiber Broadband</button>
+        <button id="tabAirFiber" class="plan-tab">AirFiber</button>
+      </div>
+      <div class="plan-grid" id="plansGridFiber"></div>
+      <div class="plan-grid" id="plansGridAirFiber" style="display:none"></div>
+      <p class="section-note center" id="airfiberNote" style="display:none">Note: AirFiber plans do not include Landline Calling or Static IP.</p>
+      <p class="section-note center" style="margin-top:1rem">*Static IP available on Fiber plans upon request (charges apply).</p>
     </div>
   </section>
 

@@ -1,0 +1,19 @@
+[
+  {"name":"Basic","speed":"40","unit":"Mbps","price":"₹499","period":"/mo",
+   "features":["Unlimited Data","Free All-India Landline Calling","Free Wi-Fi Router"]},
+  {"name":"Entertainment","speed":"30","unit":"Mbps","price":"₹599","period":"/mo",
+   "features":["350+ TV Channels Included","22+ OTT Apps Included (excl. Netflix, Prime Video, Apple TV)","Free All-India Landline Calling"]},
+  {"name":"Popular","speed":"100","unit":"Mbps","price":"₹799","period":"/mo",
+   "features":["Unlimited Fast Data","Free All-India Landline Calling","Free Wi-Fi Router"]},
+  {"name":"Entertainment Plus","speed":"100","unit":"Mbps","price":"₹899","period":"/mo",
+   "features":["350+ TV Channels Included","22+ OTT Apps Included (excl. Netflix, Prime Video, Apple TV)","Free All-India Landline Calling"]},
+  {"name":"Best Value","speed":"100","unit":"Mbps","price":"₹999","period":"/mo","badge":"Most Popular",
+   "features":["Unlimited High-Speed Data","Free All-India Landline Calling"],
+   "ottBadges":["Netflix","Amazon Prime Video","Disney+ Hotstar","Apple TV","Airtel Xstream Play"]},
+  {"name":"Ultimate TV + OTT","speed":"100","unit":"Mbps","price":"₹1,199","period":"/mo",
+   "features":["350+ TV Channels Included","Free All-India Landline Calling"],
+   "ottBadges":["Netflix","Amazon Prime Video","Disney+ Hotstar","Apple TV","Airtel Xstream Play"]},
+  {"name":"Ultra Speed","speed":"300","unit":"Mbps","price":"₹1,599","period":"/mo",
+   "features":["350+ TV Channels Included","Free All-India Landline Calling"],
+   "ottBadges":["Netflix","Amazon Prime Video","Disney+ Hotstar","Apple TV","Airtel Xstream Play"]}
+]

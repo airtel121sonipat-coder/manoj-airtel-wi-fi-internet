@@ -11,6 +11,62 @@ if (leadForm) {
   });
 }
 
+// ===== OTT brand colors =====
+const OTT_COLORS = {
+  "Netflix": "#E50914",
+  "Amazon Prime Video": "#00A8E1",
+  "Disney+ Hotstar": "#0F142D",
+  "Apple TV": "#1C1C1E",
+  "Airtel Xstream Play": "#ED1C24"
+};
+
+function renderPlanCard(p) {
+  const ottHtml = p.ottBadges ? `<div class="ott-badges">${p.ottBadges.map(o =>
+    `<span class="ott-badge" style="background:${OTT_COLORS[o] || '#333'}">${o}</span>`).join('')}</div>` : '';
+  const msg = `Hi, I am interested in booking the ${p.price}${p.period} ${p.speed} ${p.unit} Broadband Plan`;
+  return `
+    <div class="plan-card ${p.badge ? 'featured' : ''}">
+      ${p.badge ? `<span class="plan-badge">${p.badge}</span>` : ''}
+      <div class="plan-speed">${p.speed}<small> ${p.unit}</small></div>
+      <div class="plan-price">${p.price}<small>${p.period}</small></div>
+      <ul class="plan-features">${p.features.map(f => `<li>✔️ ${f}</li>`).join('')}</ul>
+      ${ottHtml}
+      <a href="https://wa.me/919255820000?text=${encodeURIComponent(msg)}" class="btn btn-primary" style="width:100%;text-align:center;display:block" target="_blank" rel="noopener">Book This Plan</a>
+    </div>`;
+}
+
+function loadPlansInto(containerId, dataFile) {
+  const grid = document.getElementById(containerId);
+  if (!grid) return;
+  loadJSON(dataFile).then(items => {
+    if (!items) return;
+    grid.innerHTML = items.map(renderPlanCard).join('');
+  });
+}
+
+// Fiber/AirFiber tab toggle (homepage + plans.html)
+const tabFiber = document.getElementById('tabFiber');
+const tabAirFiber = document.getElementById('tabAirFiber');
+if (tabFiber && tabAirFiber) {
+  loadPlansInto('plansGridFiber', 'data/fiber-plans.json');
+  loadPlansInto('plansGridAirFiber', 'data/airfiber-plans.json');
+  tabFiber.addEventListener('click', () => {
+    tabFiber.classList.add('active'); tabAirFiber.classList.remove('active');
+    document.getElementById('plansGridFiber').style.display = '';
+    document.getElementById('plansGridAirFiber').style.display = 'none';
+    document.getElementById('airfiberNote').style.display = 'none';
+  });
+  tabAirFiber.addEventListener('click', () => {
+    tabAirFiber.classList.add('active'); tabFiber.classList.remove('active');
+    document.getElementById('plansGridAirFiber').style.display = '';
+    document.getElementById('plansGridFiber').style.display = 'none';
+    document.getElementById('airfiberNote').style.display = '';
+  });
+}
+// Single-type pages (fiber.html / airfiber.html)
+loadPlansInto('plansGridOnlyFiber', 'data/fiber-plans.json');
+loadPlansInto('plansGridOnlyAirFiber', 'data/airfiber-plans.json');
+
 // ===== Mobile nav toggle =====
 const navToggle = document.getElementById('navToggle');
 const nav = document.getElementById('nav');
@@ -73,20 +129,6 @@ loadJSON('data/services.json').then(items => {
     </a>`).join('');
 });
 
-// ===== Plans =====
-loadJSON('data/plans.json').then(items => {
-  if (!items) return;
-  const grid = document.getElementById('plansGrid');
-  if (!grid) return;
-  grid.innerHTML = items.map(p => `
-    <div class="plan-card ${p.featured ? 'featured' : ''}">
-      ${p.featured ? '<span class="plan-badge">Most Popular</span>' : ''}
-      <div class="plan-speed">${p.speed}<small> ${p.unit}</small></div>
-      <div class="plan-price">${p.price}<small>${p.period}</small></div>
-      <ul class="plan-features">${p.features.map(f => `<li>${f}</li>`).join('')}</ul>
-      <a href="https://wa.me/919255820000?text=Hello%2C%20I%27m%20interested%20in%20the%20${encodeURIComponent(p.name)}%20plan" class="btn btn-primary" style="width:100%;text-align:center" target="_blank" rel="noopener">Choose ${p.name}</a>
-    </div>`).join('');
-});
 
 // ===== OTT =====
 loadJSON('data/ott.json').then(items => {
