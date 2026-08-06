@@ -1,7 +1,24 @@
-[
-  {"q":"How can I get a new Airtel Xstream Fiber connection?","a":"Call or WhatsApp us on 9255820000. We provide quick Airtel Xstream Fiber installation in Sonipat, Kundli, Rai, Murthal, Kharkhoda, Ganaur, Gohana and Barhi."},
-  {"q":"What is Airtel AirFiber?","a":"Airtel AirFiber is a wireless high-speed broadband service that delivers fast internet without laying fiber cables — ideal where digging isn't possible."},
-  {"q":"Do you provide same-day installation?","a":"Yes, in most serviceable locations, depending on feasibility at your address."},
-  {"q":"Which areas do you serve?","a":"Sonipat, Kundli, Rai, Murthal, Kharkhoda, Ganaur, Gohana, Barhi and surrounding areas."},
-  {"q":"Can I port my existing number to Airtel Postpaid?","a":"Yes, we handle MNP (Mobile Number Portability) — bring your current number to an Airtel postpaid plan."}
-]
+{
+  "items": [
+    {
+      "q": "How can I get a new Airtel Xstream Fiber connection?",
+      "a": "Call or WhatsApp us on 9255820000. We provide quick Airtel Xstream Fiber installation in Sonipat, Kundli, Rai, Murthal, Kharkhoda, Ganaur, Gohana and Barhi."
+    },
+    {
+      "q": "What is Airtel AirFiber?",
+      "a": "Airtel AirFiber is a wireless high-speed broadband service that delivers fast internet without laying fiber cables — ideal where digging isn't possible."
+    },
+    {
+      "q": "Do you provide same-day installation?",
+      "a": "Yes, in most serviceable locations, depending on feasibility at your address."
+    },
+    {
+      "q": "Which areas do you serve?",
+      "a": "Sonipat, Kundli, Rai, Murthal, Kharkhoda, Ganaur, Gohana, Barhi and surrounding areas."
+    },
+    {
+      "q": "Can I port my existing number to Airtel Postpaid?",
+      "a": "Yes, we handle MNP (Mobile Number Portability) — bring your current number to an Airtel postpaid plan."
+    }
+  ]
+}

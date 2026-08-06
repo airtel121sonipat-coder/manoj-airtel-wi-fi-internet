@@ -1,16 +1,89 @@
-[
-  {"name":"Basic","speed":"40","unit":"Mbps","price":"₹499","period":"/mo",
-   "features":["Unlimited Data","Free Wi-Fi Router","Wireless Setup — No Digging Required"]},
-  {"name":"Entertainment","speed":"30","unit":"Mbps","price":"₹599","period":"/mo",
-   "features":["350+ TV Channels Included","22+ OTT Apps Included (excl. Netflix, Prime Video, Apple TV)","Wireless Setup — No Digging Required"]},
-  {"name":"Popular","speed":"100","unit":"Mbps","price":"₹799","period":"/mo",
-   "features":["Unlimited Fast Data","Free Wi-Fi Router","Wireless Setup — No Digging Required"]},
-  {"name":"Entertainment Plus","speed":"100","unit":"Mbps","price":"₹899","period":"/mo",
-   "features":["350+ TV Channels Included","22+ OTT Apps Included (excl. Netflix, Prime Video, Apple TV)","Wireless Setup — No Digging Required"]},
-  {"name":"Best Value","speed":"100","unit":"Mbps","price":"₹999","period":"/mo","badge":"Most Popular",
-   "features":["Unlimited High-Speed Data","Wireless Setup — No Digging Required"],
-   "ottBadges":["Netflix","Amazon Prime Video","Disney+ Hotstar","Apple TV","Airtel Xstream Play"]},
-  {"name":"Ultimate TV + OTT","speed":"100","unit":"Mbps","price":"₹1,199","period":"/mo",
-   "features":["350+ TV Channels Included","Wireless Setup — No Digging Required"],
-   "ottBadges":["Netflix","Amazon Prime Video","Disney+ Hotstar","Apple TV","Airtel Xstream Play"]}
-]
+{
+  "items": [
+    {
+      "name": "Basic",
+      "speed": "40",
+      "unit": "Mbps",
+      "price": "₹499",
+      "period": "/mo",
+      "features": [
+        "Unlimited Data",
+        "Free Wi-Fi Router",
+        "Wireless Setup — No Digging Required"
+      ]
+    },
+    {
+      "name": "Entertainment",
+      "speed": "30",
+      "unit": "Mbps",
+      "price": "₹599",
+      "period": "/mo",
+      "features": [
+        "350+ TV Channels Included",
+        "22+ OTT Apps Included (excl. Netflix, Prime Video, Apple TV)",
+        "Wireless Setup — No Digging Required"
+      ]
+    },
+    {
+      "name": "Popular",
+      "speed": "100",
+      "unit": "Mbps",
+      "price": "₹799",
+      "period": "/mo",
+      "features": [
+        "Unlimited Fast Data",
+        "Free Wi-Fi Router",
+        "Wireless Setup — No Digging Required"
+      ]
+    },
+    {
+      "name": "Entertainment Plus",
+      "speed": "100",
+      "unit": "Mbps",
+      "price": "₹899",
+      "period": "/mo",
+      "features": [
+        "350+ TV Channels Included",
+        "22+ OTT Apps Included (excl. Netflix, Prime Video, Apple TV)",
+        "Wireless Setup — No Digging Required"
+      ]
+    },
+    {
+      "name": "Best Value",
+      "speed": "100",
+      "unit": "Mbps",
+      "price": "₹999",
+      "period": "/mo",
+      "badge": "Most Popular",
+      "features": [
+        "Unlimited High-Speed Data",
+        "Wireless Setup — No Digging Required"
+      ],
+      "ottBadges": [
+        "Netflix",
+        "Amazon Prime Video",
+        "Disney+ Hotstar",
+        "Apple TV",
+        "Airtel Xstream Play"
+      ]
+    },
+    {
+      "name": "Ultimate TV + OTT",
+      "speed": "100",
+      "unit": "Mbps",
+      "price": "₹1,199",
+      "period": "/mo",
+      "features": [
+        "350+ TV Channels Included",
+        "Wireless Setup — No Digging Required"
+      ],
+      "ottBadges": [
+        "Netflix",
+        "Amazon Prime Video",
+        "Disney+ Hotstar",
+        "Apple TV",
+        "Airtel Xstream Play"
+      ]
+    }
+  ]
+}

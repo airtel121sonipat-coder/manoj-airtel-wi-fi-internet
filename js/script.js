@@ -53,7 +53,8 @@ function renderPlanCard(p) {
 function loadPlansInto(containerId, dataFile) {
   const grid = document.getElementById(containerId);
   if (!grid) return;
-  loadJSON(dataFile).then(items => {
+  loadJSON(dataFile).then(data => {
+    const items = data && data.items;
     if (!items) return;
     grid.innerHTML = items.map(renderPlanCard).join('');
   });
@@ -118,7 +119,8 @@ function animateCounters() {
 animateCounters();
 
 // ===== Services =====
-loadJSON('data/services.json').then(items => {
+loadJSON('data/services.json').then(data => {
+  const items = data && data.items;
   if (!items) return;
   const grid = document.getElementById('servicesGrid');
   if (!grid) return;
@@ -139,7 +141,8 @@ loadJSON('data/ott.json').then(items => {
 });
 
 // ===== Gallery =====
-loadJSON('data/gallery.json').then(items => {
+loadJSON('data/gallery.json').then(data => {
+  const items = data && data.items;
   if (!items) return;
   const grid = document.getElementById('galleryGrid');
   if (!grid) return;
@@ -181,7 +184,8 @@ loadJSON('data/gallery.json').then(items => {
 })();
 
 // ===== Reviews =====
-loadJSON('data/reviews.json').then(items => {
+loadJSON('data/reviews.json').then(data => {
+  const items = data && data.items;
   if (!items) return;
   const grid = document.getElementById('reviewGrid');
   if (!grid) return;
@@ -194,7 +198,8 @@ loadJSON('data/reviews.json').then(items => {
 });
 
 // ===== FAQ =====
-loadJSON('data/faq.json').then(items => {
+loadJSON('data/faq.json').then(data => {
+  const items = data && data.items;
   if (!items) return;
   const list = document.getElementById('faqList');
   if (!list) return;

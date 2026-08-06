@@ -1,0 +1,145 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/photos"
+public_folder: "assets/photos"
+
+collections:
+  - name: "gallery"
+    label: "Gallery Photos"
+    files:
+      - name: "gallery"
+        label: "Gallery"
+        file: "data/gallery.json"
+        fields:
+          - label: "Photos"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Photo", name: "image", widget: "image"}
+              - {label: "Description", name: "description", widget: "string", required: false}
+
+  - name: "fiber_plans"
+    label: "Fiber Plans"
+    files:
+      - name: "fiber_plans"
+        label: "Fiber Plans"
+        file: "data/fiber-plans.json"
+        fields:
+          - label: "Plans"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Plan Name", name: "name", widget: "string"}
+              - {label: "Speed (number)", name: "speed", widget: "string"}
+              - {label: "Unit (e.g. Mbps)", name: "unit", widget: "string"}
+              - {label: "Price (e.g. ₹499)", name: "price", widget: "string"}
+              - {label: "Period (e.g. /mo)", name: "period", widget: "string"}
+              - {label: "Badge (leave empty if none)", name: "badge", widget: "string", required: false}
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: {label: "Feature", name: "feature", widget: "string"}
+              - label: "OTT Badges (leave empty if none)"
+                name: "ottBadges"
+                widget: "list"
+                required: false
+                field: {label: "App name", name: "app", widget: "string"}
+
+  - name: "airfiber_plans"
+    label: "AirFiber Plans"
+    files:
+      - name: "airfiber_plans"
+        label: "AirFiber Plans"
+        file: "data/airfiber-plans.json"
+        fields:
+          - label: "Plans"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Plan Name", name: "name", widget: "string"}
+              - {label: "Speed (number)", name: "speed", widget: "string"}
+              - {label: "Unit (e.g. Mbps)", name: "unit", widget: "string"}
+              - {label: "Price (e.g. ₹499)", name: "price", widget: "string"}
+              - {label: "Period (e.g. /mo)", name: "period", widget: "string"}
+              - {label: "Badge (leave empty if none)", name: "badge", widget: "string", required: false}
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: {label: "Feature", name: "feature", widget: "string"}
+              - label: "OTT Badges (leave empty if none)"
+                name: "ottBadges"
+                widget: "list"
+                required: false
+                field: {label: "App name", name: "app", widget: "string"}
+
+  - name: "services"
+    label: "Services (Home Page Cards)"
+    files:
+      - name: "services"
+        label: "Services"
+        file: "data/services.json"
+        fields:
+          - label: "Services"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Icon (emoji)", name: "icon", widget: "string"}
+              - {label: "Tag", name: "tag", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "desc", widget: "string"}
+              - {label: "Link (page it opens)", name: "link", widget: "string"}
+
+  - name: "faq"
+    label: "FAQ"
+    files:
+      - name: "faq"
+        label: "FAQ"
+        file: "data/faq.json"
+        fields:
+          - label: "Questions"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Question", name: "q", widget: "string"}
+              - {label: "Answer", name: "a", widget: "text"}
+
+  - name: "reviews"
+    label: "Reviews (shown on homepage)"
+    files:
+      - name: "reviews"
+        label: "Reviews"
+        file: "data/reviews.json"
+        fields:
+          - label: "Reviews"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Title/Name", name: "name", widget: "string"}
+              - {label: "Review Text", name: "text", widget: "text"}
+
+  - name: "settings"
+    label: "Business Settings"
+    files:
+      - name: "settings"
+        label: "Settings"
+        file: "data/settings.json"
+        fields:
+          - {label: "Phone Number", name: "phone", widget: "string"}
+          - {label: "WhatsApp Number (with 91)", name: "whatsapp", widget: "string"}
+          - {label: "Business Name (HTML allowed)", name: "businessNameHtml", widget: "string"}
+          - label: "Social Links"
+            name: "social"
+            widget: "object"
+            fields:
+              - {label: "Facebook", name: "facebook", widget: "string", required: false}
+              - {label: "Instagram", name: "instagram", widget: "string", required: false}
+              - {label: "LinkedIn", name: "linkedin", widget: "string", required: false}
+              - {label: "X (Twitter)", name: "x", widget: "string", required: false}
+              - {label: "Pinterest", name: "pinterest", widget: "string", required: false}
+              - {label: "Tumblr", name: "tumblr", widget: "string", required: false}
+              - {label: "Google Reviews Link", name: "gbp", widget: "string", required: false}
+              - {label: "Apple Maps", name: "apple", widget: "string", required: false}
+              - {label: "Sulekha", name: "sulekha", widget: "string", required: false}
