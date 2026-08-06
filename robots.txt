@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://manojairtelwifi.com/sitemap.xml
+Sitemap: https://manojairtelwifiinternet.in/sitemap.xml
