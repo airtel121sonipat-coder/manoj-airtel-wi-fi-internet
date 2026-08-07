@@ -47,7 +47,7 @@
     },
     {
       "title": "Fastest Airtel Xstream Fiber & AirFiber",
-      "image": "assets/photos/237335.png",
+      "image": "https://i.ibb.co/L5hY8j1/image1.jpg",
       "description": "Sonipat's fastest home Wi-Fi connection"
     },
     {
@@ -71,8 +71,34 @@
       "description": "Unlimited data and stable connection"
     },
     {
-      "image": "assets/photos/237900.png",
-      "title": "Airtel xstream airfiber "
+      "title": "Corporate Postpaid Fraud Guard",
+      "image": "assets/photos/corporate-postpaid-fraud-guard.jpg",
+      "description": "Airtel Corporate Postpaid with advanced fraud detection (Tracemate)"
+    },
+    {
+      "title": "Airtel AirFiber",
+      "image": "assets/photos/airfiber-installation.png",
+      "description": "Airtel AirFiber installation — high speed, strong connectivity, 24/7 support"
+    },
+    {
+      "title": "Postpaid SIM & MNP",
+      "image": "assets/photos/postpaid-sim-mnp.png",
+      "description": "Airtel Postpaid SIM & MNP — switch and keep your number"
+    },
+    {
+      "title": "Airtel Crystal Voice Landline",
+      "image": "assets/photos/crystal-voice-landline.png",
+      "description": "Airtel Crystal Voice Landline — cordless phone with Wi-Fi router"
+    },
+    {
+      "title": "CCTV Installation",
+      "image": "assets/photos/cctv-installation.png",
+      "description": "CCTV Installation & Remote Viewing"
+    },
+    {
+      "title": "Business Leased Line",
+      "image": "assets/photos/business-leased-line.png",
+      "description": "Airtel Business Leased Line — high speed, dedicated, reliable"
     }
   ]
 }
