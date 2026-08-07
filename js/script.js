@@ -83,6 +83,26 @@ if (tabFiber && tabAirFiber) {
 loadPlansInto('plansGridOnlyFiber', 'data/fiber-plans.json');
 loadPlansInto('plansGridOnlyAirFiber', 'data/airfiber-plans.json');
 
+// ===== Local area search hub =====
+const areaSearchInput = document.getElementById('areaSearchInput');
+if (areaSearchInput) {
+  const chipButtons = document.querySelectorAll('.micro-area-chips button');
+  areaSearchInput.addEventListener('input', () => {
+    const q = areaSearchInput.value.toLowerCase().trim();
+    chipButtons.forEach(btn => {
+      const matches = btn.textContent.toLowerCase().includes(q);
+      btn.classList.toggle('hide', q.length > 0 && !matches);
+    });
+  });
+  chipButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const area = btn.dataset.area;
+      const msg = `Hi Manoj Airtel, please check Airtel Fiber/AirFiber availability in ${area}.`;
+      window.open(`https://wa.me/919255820000?text=${encodeURIComponent(msg)}`, '_blank');
+    });
+  });
+}
+
 // ===== Mobile nav toggle =====
 const navToggle = document.getElementById('navToggle');
 const nav = document.getElementById('nav');
@@ -118,19 +138,43 @@ function animateCounters() {
 }
 animateCounters();
 
+// ===== Shared gallery data (used by Services cards + Gallery section) =====
+const galleryDataPromise = loadJSON('data/gallery.json');
+
+function findCmsImage(galleryItems, cmsTitle) {
+  if (!galleryItems || !cmsTitle) return null;
+  const target = cmsTitle.toLowerCase().trim();
+  const match = galleryItems.find(g => g.title && g.title.toLowerCase().trim() === target);
+  return match ? match.image : null;
+}
+
 // ===== Services =====
 loadJSON('data/services.json').then(data => {
   const items = data && data.items;
   if (!items) return;
   const grid = document.getElementById('servicesGrid');
   if (!grid) return;
-  grid.innerHTML = items.map(s => `
-    <a class="card" href="${s.link}">
-      <span class="card-icon">${s.icon || ''}</span>
-      <span class="tag">${s.tag}</span>
-      <h3>${s.title}</h3>
-      <p>${s.desc}</p>
-    </a>`).join('');
+  galleryDataPromise.then(galleryData => {
+    const galleryItems = galleryData && galleryData.items;
+    grid.innerHTML = items.map(s => {
+      const img = findCmsImage(galleryItems, s.cmsTitle);
+      const msg = encodeURIComponent(s.whatsappMsg || `Hi Manoj Airtel, I'm interested in ${s.title}.`);
+      return `
+      <div class="service-card">
+        <div class="service-card-img">
+          ${img ? `<img src="${img}" alt="${s.title}" loading="lazy">` : `<span class="service-card-img-fallback">${s.icon || '📶'}</span>`}
+          <span class="service-badge">${s.badge || s.tag || ''}</span>
+        </div>
+        <div class="service-card-body">
+          <h3>${s.title}</h3>
+          <p class="service-price-tag">${s.priceTag || ''}</p>
+          <ul class="service-features">${(s.features || [s.desc]).map(f => `<li>✔️ ${f}</li>`).join('')}</ul>
+          <a href="https://wa.me/919255820000?text=${msg}" class="btn btn-whatsapp" style="width:100%;text-align:center;display:block" target="_blank" rel="noopener">${s.ctaText || 'Enquire on WhatsApp'}</a>
+          <a href="${s.link}" class="service-more-link">Learn more →</a>
+        </div>
+      </div>`;
+    }).join('');
+  });
 });
 
 
@@ -141,7 +185,7 @@ loadJSON('data/ott.json').then(items => {
 });
 
 // ===== Gallery =====
-loadJSON('data/gallery.json').then(data => {
+galleryDataPromise.then(data => {
   const items = data && data.items;
   if (!items) return;
   const grid = document.getElementById('galleryGrid');

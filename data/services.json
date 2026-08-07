@@ -1,46 +1,109 @@
 {
   "items": [
     {
-      "icon": "📡",
-      "tag": "Home & Business",
+      "cmsTitle": "Airtel Xstream Fiber",
+      "badge": "HOME & OFFICE WI-FI",
       "title": "Airtel Xstream Fiber",
-      "desc": "Unlimited wired fiber internet with speeds up to 1 Gbps.",
+      "priceTag": "Starting @ ₹499/month",
+      "features": [
+        "Superfast speeds up to 1 Gbps, unlimited data",
+        "Free Wi-Fi router + free installation",
+        "350+ TV channels & 22+ OTT apps on select plans",
+        "Free all-India landline calling"
+      ],
+      "ctaText": "Check Fiber Availability",
+      "whatsappMsg": "Hi Manoj Airtel, I want to check Airtel Fiber availability at my home/office.",
       "link": "fiber.html"
     },
     {
-      "icon": "📶",
-      "tag": "Wireless",
+      "cmsTitle": "Airtel AirFiber",
+      "badge": "WIRELESS BROADBAND",
       "title": "Airtel AirFiber",
-      "desc": "High-speed wireless broadband — no cable digging required.",
+      "priceTag": "Starting @ ₹499/month",
+      "features": [
+        "High-speed wireless broadband — plug & play",
+        "No cable digging or outdoor wiring required",
+        "Strong, stable Wi-Fi anywhere in serviceable areas",
+        "Local customer support you can actually reach"
+      ],
+      "ctaText": "Get AirFiber",
+      "whatsappMsg": "Hi Manoj Airtel, I need an Airtel AirFiber connection.",
       "link": "airfiber.html"
     },
     {
-      "icon": "📱",
-      "tag": "Mobile",
-      "title": "Postpaid SIM & MNP",
-      "desc": "New postpaid connections and number porting, same day.",
+      "cmsTitle": "Postpaid SIM & MNP",
+      "badge": "INDIVIDUAL & FAMILY",
+      "title": "Postpaid SIM & MNP Porting",
+      "priceTag": "Family Plans @ ₹449/month",
+      "features": [
+        "Switch to Airtel (MNP) without changing your number",
+        "Free doorstep SIM delivery & on-site verification",
+        "One bill for the whole family",
+        "Bundled OTT apps on higher family plans"
+      ],
+      "ctaText": "Port My Number",
+      "whatsappMsg": "Hi Manoj Airtel, I want to port my mobile number to Airtel Postpaid.",
       "link": "postpaid.html"
     },
     {
-      "icon": "🏢",
-      "tag": "Enterprise",
-      "title": "Business Leased Line",
-      "desc": "Dedicated Internet Leased Line (ILL) with static IP for offices.",
+      "cmsTitle": "Business Leased Line",
+      "badge": "ENTERPRISE CONNECTIVITY",
+      "title": "Business Internet Leased Line (ILL)",
+      "priceTag": "Dedicated Bandwidth",
+      "features": [
+        "1:1 dedicated upload & download bandwidth",
+        "Static IP available on request (charges apply)",
+        "Priority fault response for business customers",
+        "Ideal for offices, factories, warehouses & IT setups"
+      ],
+      "ctaText": "Request Enterprise Quote",
+      "whatsappMsg": "Hi Manoj Airtel, please provide a quote for a Business Leased Line (ILL) at my company.",
       "link": "business-internet.html"
     },
     {
-      "icon": "🎥",
-      "tag": "Security",
-      "title": "CCTV Installation",
-      "desc": "CCTV setup and maintenance for homes and shops.",
+      "cmsTitle": "CCTV Installation",
+      "badge": "SMART SECURITY",
+      "title": "CCTV Installation & Remote Viewing",
+      "priceTag": "Free Site Survey",
+      "features": [
+        "HD & 4K camera installation, indoor & outdoor",
+        "Live remote viewing from your mobile phone",
+        "Night vision & motion-alert options",
+        "AMC / maintenance available for shops & factories"
+      ],
+      "ctaText": "Book Free Site Survey",
+      "whatsappMsg": "Hi Manoj Airtel, I want to book a free CCTV site survey for my property.",
       "link": "business-internet.html"
     },
     {
-      "icon": "👥",
-      "tag": "Corporate",
-      "title": "Corporate SIM Plans",
-      "desc": "Bulk postpaid plans for teams and businesses.",
+      "cmsTitle": "Corporate Postpaid Fraud Guard",
+      "badge": "B2B TEAM CONNECTIONS",
+      "title": "Airtel Corporate Postpaid SIMs",
+      "priceTag": "Plans from ₹349/month",
+      "features": [
+        "GST input credit benefit for registered businesses",
+        "Retain existing company numbers on bulk porting",
+        "Dedicated relationship manager, one consolidated bill",
+        "Fraud & phishing-link protection on select plans"
+      ],
+      "ctaText": "Get Corporate Rates",
+      "whatsappMsg": "Hi Manoj Airtel, I want to enquire about Corporate SIM plans for my employees.",
       "link": "postpaid.html"
+    },
+    {
+      "cmsTitle": "Airtel Crystal Voice Landline",
+      "badge": "FIXED VOICE LINE",
+      "title": "Airtel Crystal Voice Landline",
+      "priceTag": "Unlimited All-India Calling",
+      "features": [
+        "Clear voice quality for homes & offices",
+        "Unlimited local & STD calls across India",
+        "Intercom / parallel-ringing setup available",
+        "Bundled free with select Xstream Fiber plans"
+      ],
+      "ctaText": "Get Landline Connection",
+      "whatsappMsg": "Hi Manoj Airtel, I need a new Airtel Landline / intercom setup.",
+      "link": "fiber.html"
     }
   ]
 }
