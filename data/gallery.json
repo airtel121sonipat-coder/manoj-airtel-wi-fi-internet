@@ -6,14 +6,14 @@
       "description": "Naya Sim, MNP, aur 5G plus sevayein uplabdh"
     },
     {
-      "title": "Office Wi-Fi Connection",
-      "image": "assets/photos/office-wifi-connection.jpg",
-      "description": "High-speed internet for businesses in Sonipat"
-    },
-    {
       "title": "Professional Installation",
       "image": "assets/photos/technician-installation.jpg",
       "description": "Humare technician fast aur clean Wi-Fi setup karte hue"
+    },
+    {
+      "title": "Office Wi-Fi Connection",
+      "image": "assets/photos/office-wifi-connection.jpg",
+      "description": "High-speed internet for businesses in Sonipat"
     },
     {
       "title": "Family Enjoying AirFiber",
@@ -47,7 +47,7 @@
     },
     {
       "title": "Fastest Airtel Xstream Fiber & AirFiber",
-      "image": "assets/photos/236140.jpg",
+      "image": "https://i.ibb.co/L5hY8j1/image1.jpg",
       "description": "Sonipat's fastest home Wi-Fi connection"
     },
     {
@@ -99,10 +99,6 @@
       "title": "Business Leased Line",
       "image": "assets/photos/business-leased-line.png",
       "description": "Airtel Business Leased Line — high speed, dedicated, reliable"
-    },
-    {
-      "image": "assets/photos/210729.png",
-      "title": "Manoj Airtel Wi-Fi Internet "
     }
   ]
 }
