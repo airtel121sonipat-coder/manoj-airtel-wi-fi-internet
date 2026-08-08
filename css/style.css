@@ -173,6 +173,7 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.8rem;margin-top:2rem;}
 .gallery-grid figure{margin:0;background:var(--paper-alt);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;cursor:pointer;}
 .gallery-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;}
+.gallery-grid img.fit-contain{object-fit:contain;background:var(--paper-alt);}
 .gallery-grid figcaption{font-size:.75rem;color:var(--slate);padding:.5rem .6rem;}
 
 /* Reviews */

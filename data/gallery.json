@@ -106,6 +106,105 @@
       "title": "Business Leased Line",
       "image": "assets/photos/business-leased-line.jpg",
       "description": "Airtel Business Leased Line — high speed, dedicated, reliable"
+    },
+    {
+      "title": "Airtel Store Banner Real",
+      "image": "assets/photos/airtel-store-banner-real.jpg",
+      "description": "New SIM, MNP & 5G services available at our Airtel store",
+      "fit": "contain"
+    },
+    {
+      "title": "Internet Broadband Sonipat Promo",
+      "image": "assets/photos/internet-broadband-sonipat-promo.jpg",
+      "description": "Fast, reliable & high-speed WiFi connection for home, office & business",
+      "fit": "contain"
+    },
+    {
+      "title": "Router Installation Wall",
+      "image": "assets/photos/router-installation-wall.jpg",
+      "description": "On-site Airtel router installation at a customer's home"
+    },
+    {
+      "title": "New WiFi Connection Promo",
+      "image": "assets/photos/new-wifi-connection-promo.jpg",
+      "description": "New WiFi connection made easy — call or visit our shop",
+      "fit": "contain"
+    },
+    {
+      "title": "Airtel Store Shopfront Real",
+      "image": "assets/photos/airtel-store-shopfront-real.jpg",
+      "description": "Our Airtel Wi-Fi store front"
+    },
+    {
+      "title": "Best WiFi Sonipat Promo",
+      "image": "assets/photos/best-wifi-sonipat-promo.jpg",
+      "description": "Best WiFi connection in Sonipat — unlimited, fast, stable, reliable",
+      "fit": "contain"
+    },
+    {
+      "title": "Technician Installing Router",
+      "image": "assets/photos/technician-installing-router.jpg",
+      "description": "Our technician setting up Airtel Xstream Fiber at a customer's home",
+      "fit": "contain"
+    },
+    {
+      "title": "Airtel Store Customer Care",
+      "image": "assets/photos/airtel-store-customer-care.jpg",
+      "description": "All Airtel services under one roof — Manoj Airtel Wi-Fi Internet",
+      "fit": "contain"
+    },
+    {
+      "title": "Xstream AirFiber Storefront Promo",
+      "image": "assets/photos/xstream-airfiber-storefront-promo.jpg",
+      "description": "Authorized Airtel dealer since 2016 — serving Sonipat, Kundli, TDI, Rai, Murthal",
+      "fit": "contain"
+    },
+    {
+      "title": "Superfast Airtel Fiber Promo",
+      "image": "assets/photos/superfast-airtel-fiber-promo.jpg",
+      "description": "Superfast Airtel Fiber — ultra-fast internet, unlimited data, dedicated support",
+      "fit": "contain"
+    },
+    {
+      "title": "Airtel Fastlane 5G Postpaid Promo",
+      "image": "assets/photos/airtel-fastlane-5g-postpaid-promo.jpg",
+      "description": "Airtel Fast Lane 5G Postpaid — priority network experience",
+      "fit": "contain"
+    },
+    {
+      "title": "Manoj Airtel Wifi Sonipat Banner",
+      "image": "assets/photos/manoj-airtel-wifi-sonipat-banner.jpg",
+      "description": "Manoj Airtel Wi-Fi Internet — same day installation, speeds up to 300 Mbps",
+      "fit": "contain"
+    },
+    {
+      "title": "Buffer Free WFH Promo",
+      "image": "assets/photos/buffer-free-wfh-promo.jpg",
+      "description": "Buffer-free work from home with Airtel Xstream Fiber",
+      "fit": "contain"
+    },
+    {
+      "title": "Xstream Fiber Bumper Offer Promo",
+      "image": "assets/photos/xstream-fiber-bumper-offer-promo.jpg",
+      "description": "Airtel Xstream Fiber bumper offer — 350+ TV channels & 22+ OTT apps free",
+      "fit": "contain"
+    },
+    {
+      "title": "UPI Fail Fiber Promo",
+      "image": "assets/photos/upi-fail-fiber-promo.jpg",
+      "description": "Slow internet, UPI fail? Switch to Manoj Airtel Fiber for instant transactions",
+      "fit": "contain"
+    },
+    {
+      "title": "Ghar Se Office Promo",
+      "image": "assets/photos/ghar-se-office-promo.jpg",
+      "description": "Work from home with HD video calls & fast uploads on Manoj Airtel Wi-Fi Internet",
+      "fit": "contain"
+    },
+    {
+      "title": "Family Wifi Signal Promo",
+      "image": "assets/photos/family-wifi-signal-promo.jpg",
+      "description": "Reliable WiFi coverage for the whole family"
     }
   ]
 }

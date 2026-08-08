@@ -194,7 +194,7 @@ galleryDataPromise.then(data => {
   if (!grid) return;
   grid.innerHTML = items.map(g => `
     <figure>
-      <img src="${g.image}" alt="${g.title}" loading="lazy" onerror="this.closest('figure').style.display='none'">
+      <img src="${g.image}" alt="${g.title}" loading="lazy" class="${g.fit === 'contain' ? 'fit-contain' : ''}" onerror="this.closest('figure').style.display='none'">
       <figcaption>${g.description || ''}</figcaption>
     </figure>`
   ).join('');
