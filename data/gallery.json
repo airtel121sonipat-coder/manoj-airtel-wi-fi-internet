@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "Airtel Xstream Fiber",
+      "image": "assets/photos/xstream-fiber-family-banner.jpg",
+      "description": "Manoj Airtel Wi-Fi Internet — trusted internet partner since 2016",
+      "fit": "contain",
+      "hideInGallery": true
+    },
+    {
       "title": "Airtel Store Manoj WiFi Sonipat",
       "image": "assets/photos/airtel-store-poster.jpg",
       "description": "Naya Sim, MNP, aur 5G plus sevayein uplabdh"

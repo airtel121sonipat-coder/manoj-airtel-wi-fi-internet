@@ -145,7 +145,7 @@ function findCmsImage(galleryItems, cmsTitle) {
   if (!galleryItems || !cmsTitle) return null;
   const target = cmsTitle.toLowerCase().trim();
   const match = galleryItems.find(g => g.title && g.title.toLowerCase().trim() === target);
-  return match ? match.image : null;
+  return match || null;
 }
 
 // ===== Services =====
@@ -157,12 +157,13 @@ loadJSON('data/services.json').then(data => {
   galleryDataPromise.then(galleryData => {
     const galleryItems = galleryData && galleryData.items;
     grid.innerHTML = items.map(s => {
-      const img = findCmsImage(galleryItems, s.cmsTitle);
+      const imgItem = findCmsImage(galleryItems, s.cmsTitle);
       const msg = encodeURIComponent(s.whatsappMsg || `Hi Manoj Airtel, I'm interested in ${s.title}.`);
+      const fitClass = imgItem && imgItem.fit === 'contain' ? ' fit-contain' : '';
       return `
       <div class="service-card">
         <div class="service-card-img">
-          ${img ? `<img src="${img}" alt="${s.title}" loading="lazy">` : `<span class="service-card-img-fallback">${s.icon || '📶'}</span>`}
+          ${imgItem ? `<img src="${imgItem.image}" alt="${s.title}" loading="lazy" class="${fitClass.trim()}">` : `<span class="service-card-img-fallback">${s.icon || '📶'}</span>`}
           <span class="service-badge">${s.badge || s.tag || ''}</span>
         </div>
         <div class="service-card-body">
@@ -186,8 +187,9 @@ loadJSON('data/ott.json').then(items => {
 
 // ===== Gallery =====
 galleryDataPromise.then(data => {
-  const items = data && data.items;
-  if (!items) return;
+  const allItems = data && data.items;
+  if (!allItems) return;
+  const items = allItems.filter(g => !g.hideInGallery);
   const grid = document.getElementById('galleryGrid');
   if (!grid) return;
   grid.innerHTML = items.map(g => `
