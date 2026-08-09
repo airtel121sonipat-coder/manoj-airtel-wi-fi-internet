@@ -46,8 +46,10 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
   border-bottom:1px solid var(--line);
 }
 .header-row{display:flex;align-items:center;justify-content:space-between;height:64px;gap:1rem;}
-.logo{font-family:var(--display);font-weight:800;font-size:.78rem;letter-spacing:.02em;white-space:nowrap;}
+.logo{font-family:var(--display);font-weight:800;font-size:.78rem;letter-spacing:.02em;white-space:nowrap;display:inline-flex;align-items:center;gap:.5rem;}
 .logo span{color:var(--red);}
+.logo-badge-img{height:42px;width:auto;object-fit:contain;border-radius:6px;vertical-align:middle;flex-shrink:0;}
+.footer-logo .logo-badge-img{height:36px;}
 .nav{display:flex;gap:1.6rem;font-size:.92rem;font-weight:500;}
 .nav a:hover{color:var(--red);}
 .header-call{margin-left:auto;}

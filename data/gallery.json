@@ -53,31 +53,6 @@
       "description": "Professional setup for all your devices"
     },
     {
-      "title": "Fastest Airtel Xstream Fiber & AirFiber",
-      "image": "https://i.ibb.co/L5hY8j1/image1.jpg",
-      "description": "Sonipat's fastest home Wi-Fi connection"
-    },
-    {
-      "title": "Airtel AirFiber Wi-Fi",
-      "image": "https://i.ibb.co/jvbcpV86/image2.jpg",
-      "description": "High-speed wireless broadband internet"
-    },
-    {
-      "title": "Airtel Xstream AirFiber Setup",
-      "image": "https://i.ibb.co/60DCzvdB/image3.jpg",
-      "description": "Fast installation and HD streaming ready"
-    },
-    {
-      "title": "Reliable Home Wi-Fi",
-      "image": "https://i.ibb.co/Z6z4pyV8/image4.jpg",
-      "description": "Same day installation with local support"
-    },
-    {
-      "title": "Superfast Wi-Fi Connection",
-      "image": "https://i.ibb.co/dJzRkw60/image5.jpg",
-      "description": "Unlimited data and stable connection"
-    },
-    {
       "title": "Corporate Postpaid Fraud Guard",
       "image": "assets/photos/corporate-postpaid-fraud-guard.jpg",
       "description": "Airtel Corporate Postpaid with advanced fraud detection (Tracemate)"
@@ -205,6 +180,109 @@
       "title": "Family Wifi Signal Promo",
       "image": "assets/photos/family-wifi-signal-promo.jpg",
       "description": "Reliable WiFi coverage for the whole family"
+    },
+    {
+      "title": "WiFi Internet Superfast Gaming Promo",
+      "image": "assets/photos/wifi-internet-superfast-gaming-promo.jpg",
+      "description": "Superfast speeds, unlimited data — for HD streaming, gaming & work from home",
+      "fit": "contain"
+    },
+    {
+      "title": "Manoj AirFiber WiFi Sonipat TV Promo",
+      "image": "assets/photos/manoj-airfiber-wifi-sonipat-tv-promo.jpg",
+      "description": "100 Mbps, unlimited data, same day installation — free router & OTT",
+      "fit": "contain"
+    },
+    {
+      "title": "Support Anytime Anywhere Promo",
+      "image": "assets/photos/support-anytime-anywhere-promo.jpg",
+      "description": "24/7 customer support — fast response, on-site technical help",
+      "fit": "contain"
+    },
+    {
+      "title": "Airtel WiFi Internet Banner Shop Real",
+      "image": "assets/photos/airtel-wifi-internet-banner-shop-real.jpg",
+      "description": "Airtel Wi-Fi Internet banner at our shop with router on display",
+      "fit": "contain"
+    },
+    {
+      "title": "Superfast Fiber WiFi Subhash Chowk Promo",
+      "image": "assets/photos/superfast-fiber-wifi-subhash-chowk-promo.jpg",
+      "description": "Superfast Airtel Fiber Wi-Fi now available at Subhash Chowk",
+      "fit": "contain"
+    },
+    {
+      "title": "Live Cricket No Buffering Promo",
+      "image": "assets/photos/live-cricket-no-buffering-promo.jpg",
+      "description": "Watch live cricket without buffering on Airtel Xstream Fiber & AirFiber",
+      "fit": "contain"
+    },
+    {
+      "title": "Manoj WiFi Internet Storefront Real 2",
+      "image": "assets/photos/manoj-wifi-internet-storefront-real2.jpg",
+      "description": "Manoj Wi-Fi Internet, Sonipat — our shop front",
+      "fit": "contain"
+    },
+    {
+      "title": "Manoj Office Elderly Customers Real",
+      "image": "assets/photos/manoj-office-elderly-customers-real.jpg",
+      "description": "Helping customers at our Sonipat office"
+    },
+    {
+      "title": "Manoj Airtel Business Card",
+      "image": "assets/photos/manoj-airtel-business-card.jpg",
+      "description": "Manoj Airtel Wi-Fi Internet — contact details",
+      "fit": "contain"
+    },
+    {
+      "title": "Superfast Internet Devices Hindi Promo",
+      "image": "assets/photos/superfast-internet-devices-hindi-promo.jpg",
+      "description": "Ab super-fast internet, sabhi devices par ek saath",
+      "fit": "contain"
+    },
+    {
+      "title": "Family Outdoor Manoj WiFi Franchise Real",
+      "image": "assets/photos/family-outdoor-manoj-wifi-franchise-real.jpg",
+      "description": "Manoj Wi-Fi Internet — Airtel Authorized Franchise, serving Sonipat",
+      "fit": "contain"
+    },
+    {
+      "title": "WiFi Internet Mountains Family Promo",
+      "image": "assets/photos/wifi-internet-mountains-family-promo.jpg",
+      "description": "Superfast broadband connection — high-speed data, unlimited MB",
+      "fit": "contain"
+    },
+    {
+      "title": "WiFi Internet Woman Laptop Promo",
+      "image": "assets/photos/wifi-internet-woman-laptop-promo.jpg",
+      "description": "Airtel Wi-Fi Internet — tez aur bharosemand",
+      "fit": "contain"
+    },
+    {
+      "title": "Monsoon Internet Reliability Promo",
+      "image": "assets/photos/monsoon-internet-reliability-promo.jpg",
+      "description": "Airtel Fiber — fast & stable connection in every season",
+      "fit": "contain"
+    },
+    {
+      "title": "Airtel Store Interior Express Service",
+      "image": "assets/photos/office-interior-1.jpg",
+      "description": "Our Airtel store — Express Service desk"
+    },
+    {
+      "title": "Airtel Store Interior 5G Display",
+      "image": "assets/photos/office-interior-2.jpg",
+      "description": "Our Airtel store — 5G experience zone"
+    },
+    {
+      "title": "Airtel Store Shopfront",
+      "image": "assets/photos/shop-exterior.jpg",
+      "description": "Get Airtel Wi-Fi here — our store front"
+    },
+    {
+      "title": "AirFiber Device Closeup",
+      "image": "assets/photos/airfiber-device-closeup.jpg",
+      "description": "Airtel AirFiber device — compact wireless broadband unit"
     }
   ]
 }
