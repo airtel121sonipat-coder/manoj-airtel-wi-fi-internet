@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# AI crawler files (llms.txt standard)
+Allow: /llms.txt
+Allow: /llms-full.txt
+
 Sitemap: https://manojairtelwifiinternet.in/sitemap.xml
