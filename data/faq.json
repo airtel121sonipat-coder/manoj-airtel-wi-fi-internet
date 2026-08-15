@@ -19,6 +19,22 @@
     {
       "q": "Can I port my existing number to Airtel Postpaid?",
       "a": "Yes, we handle MNP (Mobile Number Portability) — bring your current number to an Airtel postpaid plan."
+    },
+    {
+      "q": "Should I choose Airtel Xstream Fiber or AirFiber for my home?",
+      "a": "Fiber is preferred if a fiber cable connection is feasible at your address — it's the most stable option. AirFiber is a great wireless alternative where fiber cabling isn't possible, such as rented flats or older buildings."
+    },
+    {
+      "q": "What documents are required for a new connection?",
+      "a": "A government photo ID (Aadhaar, voter ID, etc.) and a passport-size photo are usually enough. We'll confirm exact requirements when you call or WhatsApp us."
+    },
+    {
+      "q": "Which internet speed is right for my home?",
+      "a": "100 Mbps suits most households. If you have multiple TVs, gamers, or several people on video calls at once, 300 Mbps avoids slowdowns during peak hours."
+    },
+    {
+      "q": "Can businesses get a Static IP, and what is it used for?",
+      "a": "Yes — a static IP is available as an add-on for offices and shops, and is useful for remote CCTV viewing, VPN access, hosting a server, or billing software that needs a fixed address."
     }
   ]
 }
