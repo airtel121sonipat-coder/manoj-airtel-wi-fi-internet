@@ -85,9 +85,9 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
   .hero-visual img{width:100%;height:auto;display:block;object-fit:contain;}
 }
 .eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin-bottom:.9rem;}
-.hero h1{font-size:2.5rem;color:var(--ink);}
+.hero h1{font-size:2.5rem;line-height:1.2;color:var(--ink);}
 .hero h1 em{color:var(--red);font-style:normal;}
-.hero-sub{color:var(--slate);font-size:1.05rem;max-width:560px;}
+.hero-sub{color:#3D3A46;font-size:1.05rem;max-width:560px;}
 .hero-actions{display:flex;gap:.8rem;flex-wrap:wrap;margin:1.6rem 0 2.4rem;}
 .readout{display:flex;gap:2rem;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.15);padding-top:1.6rem;}
 .trust-badges{display:flex;flex-wrap:wrap;gap:.7rem;margin:0 0 1.6rem;}

@@ -104,6 +104,36 @@
       "ctaText": "Get Landline Connection",
       "whatsappMsg": "Hi Manoj Airtel, I need a new Airtel Landline / intercom setup.",
       "link": "fiber.html"
+    },
+    {
+      "cmsTitle": "PG & Hostel Wi-Fi",
+      "badge": "STUDENTS & TENANTS",
+      "title": "PG & Hostel Wi-Fi Connection",
+      "priceTag": "Shared & Private Room Plans",
+      "features": [
+        "High-speed Wi-Fi for PG accommodations & hostels",
+        "Flexible plans for shared or private rooms",
+        "Quick setup — ready before move-in day",
+        "Ideal for students & working professionals"
+      ],
+      "ctaText": "Check PG Wi-Fi Plans",
+      "whatsappMsg": "Hi Manoj Airtel, I need a Wi-Fi connection for my PG/hostel room.",
+      "link": "fiber.html"
+    },
+    {
+      "cmsTitle": "Society & Apartment Bulk Wi-Fi",
+      "badge": "SOCIETIES & APARTMENTS",
+      "title": "Society & Apartment Bulk Wi-Fi Connection",
+      "priceTag": "Bulk Connection Rates",
+      "features": [
+        "Bulk Wi-Fi & broadband setup for housing societies",
+        "Covers TDI Kingsbury & other Sonipat apartment complexes",
+        "Coordinated installation across multiple flats/towers",
+        "One point of contact for the whole society"
+      ],
+      "ctaText": "Enquire for Your Society",
+      "whatsappMsg": "Hi Manoj Airtel, I want to enquire about bulk Wi-Fi connections for our society/apartment.",
+      "link": "fiber.html"
     }
   ]
 }
