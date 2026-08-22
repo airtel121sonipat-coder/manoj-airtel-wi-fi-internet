@@ -283,6 +283,18 @@
       "title": "AirFiber Device Closeup",
       "image": "assets/photos/airfiber-device-closeup.jpg",
       "description": "Airtel AirFiber device — compact wireless broadband unit"
+    },
+    {
+      "title": "PG & Hostel Wi-Fi",
+      "image": "assets/photos/pg-hostel-wifi-promo.jpg",
+      "description": "PG & Hostel Wi-Fi Connection — shared & private room plans for students and tenants",
+      "fit": "contain"
+    },
+    {
+      "title": "Society & Apartment Bulk Wi-Fi",
+      "image": "assets/photos/society-apartment-bulk-wifi-promo.jpg",
+      "description": "Society & Apartment Bulk Wi-Fi Connection — covering TDI Kingsbury & other Sonipat apartment complexes",
+      "fit": "contain"
     }
   ]
 }
