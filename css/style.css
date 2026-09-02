@@ -264,6 +264,17 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .sticky-btn.call{background:var(--ink);color:#fff;}
 .sticky-btn.whatsapp{background:#25D366;color:#fff;}
 
+/* Mobile app-style 5-icon bottom nav (mobile only, replaces old 2-button sticky-cta) */
+.mobile-bottom-nav{position:fixed;bottom:0;left:0;right:0;display:none;z-index:9999;background:#ffffff;box-shadow:0 -2px 10px rgba(0,0,0,.1);border-top:1px solid var(--line);}
+.mobile-bottom-nav a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:56px;padding:6px 2px;color:var(--ink);text-decoration:none;font-size:.68rem;font-weight:600;line-height:1;}
+.mobile-bottom-nav a .mbn-icon{font-size:1.15rem;line-height:1;}
+.mobile-bottom-nav a.mbn-whatsapp{color:#128C3E;}
+.mobile-bottom-nav a.mbn-call{background:var(--ink);color:#fff;margin:6px 6px 6px 0;border-radius:10px;}
+.mobile-bottom-nav a.mbn-call .mbn-icon{color:#fff;}
+
+/* Header quick-access "Plans" pill next to hamburger (mobile only) */
+.header-plans-pill{display:none;}
+
 /* ===== Responsive ===== */
 @media (max-width:860px){
   .nav{position:fixed;top:64px;left:0;right:0;background:var(--paper);flex-direction:column;padding:1rem 20px;border-bottom:1px solid var(--line);display:none;gap:.9rem;}
@@ -272,8 +283,10 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
   .header-call{display:none;}
   .ott-inner,.location-inner{grid-template-columns:1fr;}
   .footer-grid{grid-template-columns:1fr 1fr;}
-  .sticky-cta{display:flex;}
-  body{padding-bottom:56px;}
+  .sticky-cta{display:none;}
+  .mobile-bottom-nav{display:flex;}
+  .header-plans-pill{display:inline-flex;align-items:center;justify-content:center;background:var(--brand,#e40b16);color:#fff;font-size:.78rem;font-weight:700;padding:.4rem .8rem;border-radius:999px;margin-left:auto;margin-right:.5rem;text-decoration:none;white-space:nowrap;}
+  body{padding-bottom:64px;}
   .hero h1{font-size:1.9rem;}
 }
 @media (max-width:520px){
