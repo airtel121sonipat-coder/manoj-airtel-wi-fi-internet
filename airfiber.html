@@ -62,6 +62,20 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How is AirFiber different from a normal Wi-Fi or mobile hotspot?","acceptedAnswer":{"@type":"Answer","text":"AirFiber is a fixed wireless broadband service using a dedicated device installed at your home or office, giving fiber-like speeds without laying a physical fiber cable — unlike a mobile hotspot, it's built for full-time home or office use."}},
+    {"@type":"Question","name":"Is AirFiber a good option if fiber cable can't be run to my building?","acceptedAnswer":{"@type":"Answer","text":"Yes, this is exactly where AirFiber helps — older buildings, rented flats where cabling isn't allowed, or areas where fiber trenching is difficult. Installation is usually quicker since no cable needs to be laid."}},
+    {"@type":"Question","name":"Does AirFiber work well during monsoon or bad weather?","acceptedAnswer":{"@type":"Answer","text":"AirFiber is designed to stay reliable in normal weather conditions. Signal strength depends on line-of-sight to the nearest tower, which we check before confirming installation at your address."}},
+    {"@type":"Question","name":"What speeds does Airtel AirFiber support?","acceptedAnswer":{"@type":"Answer","text":"AirFiber plans are available at multiple speed tiers suitable for browsing, streaming and work-from-home — we'll recommend the right plan based on how many people and devices will use the connection."}},
+    {"@type":"Question","name":"Can I switch from AirFiber to wired Xstream Fiber later if cabling becomes possible?","acceptedAnswer":{"@type":"Answer","text":"Yes, if fiber cabling becomes feasible at your address later, we can help you migrate from AirFiber to a wired Xstream Fiber connection."}},
+    {"@type":"Question","name":"Is this website Airtel's official customer care for AirFiber?","acceptedAnswer":{"@type":"Answer","text":"No. For new Airtel AirFiber connection enquiries and local installation assistance, contact Manoj Airtel Wi-Fi Internet. This website is for local sales and installation assistance and is not presented as Airtel's national customer care."}}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -150,9 +164,55 @@
     <div class="wrap wrap-narrow">
       <p class="eyebrow center">Questions</p>
       <h2 class="center">AirFiber FAQs</h2>
-      <div class="faq-list" id="faqList"></div>
+      <div class="faq-list" id="airfiberFaqList">
+        <div class="faq-item open">
+          <button class="faq-q" aria-expanded="true">How is AirFiber different from a normal Wi-Fi or mobile hotspot?<span class="faq-icon">−</span></button>
+          <div class="faq-a">AirFiber is a fixed wireless broadband service using a dedicated device installed at your home or office, giving fiber-like speeds without laying a physical fiber cable — unlike a mobile hotspot, it's built for full-time home or office use.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is AirFiber a good option if fiber cable can't be run to my building?<span class="faq-icon">+</span></button>
+          <div class="faq-a">Yes, this is exactly where AirFiber helps — older buildings, rented flats where cabling isn't allowed, or areas where fiber trenching is difficult. Installation is usually quicker since no cable needs to be laid.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Does AirFiber work well during monsoon or bad weather?<span class="faq-icon">+</span></button>
+          <div class="faq-a">AirFiber is designed to stay reliable in normal weather conditions. Signal strength depends on line-of-sight to the nearest tower, which we check before confirming installation at your address.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What speeds does Airtel AirFiber support?<span class="faq-icon">+</span></button>
+          <div class="faq-a">AirFiber plans are available at multiple speed tiers suitable for browsing, streaming and work-from-home — we'll recommend the right plan based on how many people and devices will use the connection.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I switch from AirFiber to wired Xstream Fiber later if cabling becomes possible?<span class="faq-icon">+</span></button>
+          <div class="faq-a">Yes, if fiber cabling becomes feasible at your address later, we can help you migrate from AirFiber to a wired Xstream Fiber connection.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is this website Airtel's official customer care for AirFiber?<span class="faq-icon">+</span></button>
+          <div class="faq-a">No. For new Airtel AirFiber connection enquiries and local installation assistance, contact Manoj Airtel Wi-Fi Internet. This website is for local sales and installation assistance and is not presented as Airtel's national customer care.</div>
+        </div>
+      </div>
     </div>
   </section>
+  <script>
+  (function(){
+    var list = document.getElementById('airfiberFaqList');
+    if (!list) return;
+    list.querySelectorAll('.faq-item').forEach(function(item){
+      item.querySelector('.faq-q').addEventListener('click', function(){
+        var isOpen = item.classList.contains('open');
+        list.querySelectorAll('.faq-item').forEach(function(i){
+          i.classList.remove('open');
+          i.querySelector('.faq-icon').textContent = '+';
+          i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          item.querySelector('.faq-icon').textContent = '−';
+          item.querySelector('.faq-q').setAttribute('aria-expanded','true');
+        }
+      });
+    });
+  })();
+  </script>
 
   <section class="section ott">
     <div class="wrap" style="text-align:center">

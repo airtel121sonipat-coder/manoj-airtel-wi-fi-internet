@@ -53,6 +53,20 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Which Fiber or AirFiber plan should I choose for a home with 3-4 people?","acceptedAnswer":{"@type":"Answer","text":"For a household of 3-4 people with regular streaming and video calls, a 100 Mbps plan usually works well. If multiple people game or stream 4K at the same time, we'd suggest a higher-speed plan — tell us your usage on WhatsApp and we'll recommend one."}},
+    {"@type":"Question","name":"Can I upgrade or downgrade my plan later without a new installation?","acceptedAnswer":{"@type":"Answer","text":"Yes, once your Fiber or AirFiber connection is active, you can upgrade or downgrade your plan without needing a fresh installation visit in most cases."}},
+    {"@type":"Question","name":"Do all plans include a free router, or is it extra?","acceptedAnswer":{"@type":"Answer","text":"A Wi-Fi router is included free with new Fiber and AirFiber connections on most plans — we'll confirm this for the specific plan you choose."}},
+    {"@type":"Question","name":"Are the OTT apps and TV channels shown in the plans actually included, or a separate add-on?","acceptedAnswer":{"@type":"Answer","text":"Plans that list TV channels or OTT apps include them as part of that plan's price — no separate subscription is needed for the specific apps or channels listed on that plan."}},
+    {"@type":"Question","name":"Is there a security deposit or long-term contract required?","acceptedAnswer":{"@type":"Answer","text":"We'll confirm current deposit and billing terms for your chosen plan on WhatsApp before booking, so there are no surprises at installation."}},
+    {"@type":"Question","name":"Is this website Airtel's official customer care for plans and billing?","acceptedAnswer":{"@type":"Answer","text":"No. For new connection plan enquiries and local installation assistance, contact Manoj Airtel Wi-Fi Internet. This website is for local sales and installation assistance and is not presented as Airtel's national customer care."}}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -125,9 +139,55 @@
     <div class="wrap wrap-narrow">
       <p class="eyebrow center">Questions</p>
       <h2 class="center">Plan FAQs</h2>
-      <div class="faq-list" id="faqList"></div>
+      <div class="faq-list" id="plansFaqList">
+        <div class="faq-item open">
+          <button class="faq-q" aria-expanded="true">Which Fiber or AirFiber plan should I choose for a home with 3-4 people?<span class="faq-icon">−</span></button>
+          <div class="faq-a">For a household of 3-4 people with regular streaming and video calls, a 100 Mbps plan usually works well. If multiple people game or stream 4K at the same time, we'd suggest a higher-speed plan — tell us your usage on WhatsApp and we'll recommend one.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I upgrade or downgrade my plan later without a new installation?<span class="faq-icon">+</span></button>
+          <div class="faq-a">Yes, once your Fiber or AirFiber connection is active, you can upgrade or downgrade your plan without needing a fresh installation visit in most cases.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do all plans include a free router, or is it extra?<span class="faq-icon">+</span></button>
+          <div class="faq-a">A Wi-Fi router is included free with new Fiber and AirFiber connections on most plans — we'll confirm this for the specific plan you choose.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Are the OTT apps and TV channels shown in the plans actually included, or a separate add-on?<span class="faq-icon">+</span></button>
+          <div class="faq-a">Plans that list TV channels or OTT apps include them as part of that plan's price — no separate subscription is needed for the specific apps or channels listed on that plan.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is there a security deposit or long-term contract required?<span class="faq-icon">+</span></button>
+          <div class="faq-a">We'll confirm current deposit and billing terms for your chosen plan on WhatsApp before booking, so there are no surprises at installation.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is this website Airtel's official customer care for plans and billing?<span class="faq-icon">+</span></button>
+          <div class="faq-a">No. For new connection plan enquiries and local installation assistance, contact Manoj Airtel Wi-Fi Internet. This website is for local sales and installation assistance and is not presented as Airtel's national customer care.</div>
+        </div>
+      </div>
     </div>
   </section>
+  <script>
+  (function(){
+    var list = document.getElementById('plansFaqList');
+    if (!list) return;
+    list.querySelectorAll('.faq-item').forEach(function(item){
+      item.querySelector('.faq-q').addEventListener('click', function(){
+        var isOpen = item.classList.contains('open');
+        list.querySelectorAll('.faq-item').forEach(function(i){
+          i.classList.remove('open');
+          i.querySelector('.faq-icon').textContent = '+';
+          i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          item.querySelector('.faq-icon').textContent = '−';
+          item.querySelector('.faq-q').setAttribute('aria-expanded','true');
+        }
+      });
+    });
+  })();
+  </script>
 </main>
 
 <footer class="footer">
