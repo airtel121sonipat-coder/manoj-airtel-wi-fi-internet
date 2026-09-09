@@ -102,6 +102,25 @@
         "Apple TV",
         "Airtel Xstream Play"
       ]
+    },
+    {
+      "name": "Ultra Speed 1 Gbps",
+      "speed": "1024",
+      "unit": "Mbps",
+      "price": "₹3,999",
+      "period": "/mo",
+      "badge": "Fastest",
+      "features": [
+        "350+ TV Channels Included",
+        "Free All-India Landline Calling"
+      ],
+      "ottBadges": [
+        "Netflix",
+        "Amazon Prime Video",
+        "Disney+ Hotstar",
+        "Apple TV",
+        "Airtel Xstream Play"
+      ]
     }
   ]
 }

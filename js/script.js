@@ -309,8 +309,8 @@ loadJSON('data/settings.json').then(s => {
   const row = document.getElementById('socialRow');
   const links = {
     facebook: 'Facebook', instagram: 'Instagram', linkedin: 'LinkedIn',
-    x: 'X', pinterest: 'Pinterest', tumblr: 'Tumblr', gbp: 'Google Reviews',
-    apple: 'Apple Maps', sulekha: 'Sulekha'
+    x: 'X', gbp: 'Google Reviews',
+    apple: 'Apple Maps', sulekha: 'Sulekha', youtube: 'YouTube'
   };
   row.innerHTML = Object.entries(links)
     .filter(([key]) => s.social[key])
@@ -321,13 +321,29 @@ loadJSON('data/settings.json').then(s => {
   const iconRow = document.getElementById('socialIconRow');
   if (iconRow) {
     const icons = {
-      gbp: '★', facebook: 'f', instagram: '📷', x: '𝕏',
-      linkedin: 'in', pinterest: 'P', tumblr: 't'
+      gbp: 'G', facebook: 'f', instagram: '📷', x: '𝕏',
+      linkedin: 'in', apple: '', youtube: '▶'
     };
-    const iconLabels = { gbp: 'Google Reviews', facebook: 'Facebook', instagram: 'Instagram', x: 'X', linkedin: 'LinkedIn', pinterest: 'Pinterest', tumblr: 'Tumblr' };
+    const iconLabels = { gbp: 'Google Reviews', facebook: 'Facebook', instagram: 'Instagram', x: 'X', linkedin: 'LinkedIn', apple: 'Apple Maps', youtube: 'YouTube' };
     iconRow.innerHTML = Object.entries(icons)
       .filter(([key]) => s.social[key])
       .map(([key, glyph]) => `<a href="${s.social[key]}" target="_blank" rel="noopener" class="social-icon social-icon-${key}" aria-label="${iconLabels[key]}" title="${iconLabels[key]}">${glyph}</a>`)
       .join('');
   }
+});
+
+// ===== Lazy-load YouTube embed (click-to-play, saves bandwidth) =====
+document.querySelectorAll('.yt-embed[data-yt-id]').forEach(box => {
+  const id = box.getAttribute('data-yt-id');
+  const img = document.createElement('img');
+  img.src = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+  img.alt = box.getAttribute('data-yt-alt') || 'YouTube video';
+  img.loading = 'lazy';
+  const playBtn = document.createElement('span');
+  playBtn.className = 'yt-play-btn';
+  box.appendChild(img);
+  box.appendChild(playBtn);
+  box.addEventListener('click', () => {
+    box.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1" title="${img.alt}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
+  }, { once: true });
 });

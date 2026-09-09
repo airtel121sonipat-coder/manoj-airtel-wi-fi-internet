@@ -86,10 +86,16 @@ collections:
             name: "items"
             widget: "list"
             fields:
-              - {label: "Icon (emoji)", name: "icon", widget: "string"}
-              - {label: "Tag", name: "tag", widget: "string"}
+              - {label: "CMS Title (matches gallery photo title)", name: "cmsTitle", widget: "string"}
+              - {label: "Badge", name: "badge", widget: "string"}
               - {label: "Title", name: "title", widget: "string"}
-              - {label: "Description", name: "desc", widget: "string"}
+              - {label: "Price Tag", name: "priceTag", widget: "string"}
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: {label: "Feature", name: "feature", widget: "string"}
+              - {label: "CTA Button Text", name: "ctaText", widget: "string"}
+              - {label: "WhatsApp Message", name: "whatsappMsg", widget: "text"}
               - {label: "Link (page it opens)", name: "link", widget: "string"}
 
   - name: "faq"
@@ -138,8 +144,7 @@ collections:
               - {label: "Instagram", name: "instagram", widget: "string", required: false}
               - {label: "LinkedIn", name: "linkedin", widget: "string", required: false}
               - {label: "X (Twitter)", name: "x", widget: "string", required: false}
-              - {label: "Pinterest", name: "pinterest", widget: "string", required: false}
-              - {label: "Tumblr", name: "tumblr", widget: "string", required: false}
+              - {label: "YouTube", name: "youtube", widget: "string", required: false}
               - {label: "Google Reviews Link", name: "gbp", widget: "string", required: false}
               - {label: "Apple Maps", name: "apple", widget: "string", required: false}
               - {label: "Sulekha", name: "sulekha", widget: "string", required: false}
