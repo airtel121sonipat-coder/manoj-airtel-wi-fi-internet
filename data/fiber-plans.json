@@ -105,8 +105,8 @@
     },
     {
       "name": "Ultra Speed 1 Gbps",
-      "speed": "1024",
-      "unit": "Mbps",
+      "speed": "1",
+      "unit": "Gbps",
       "price": "₹3,999",
       "period": "/mo",
       "badge": "Fastest",

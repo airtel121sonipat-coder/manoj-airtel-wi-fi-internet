@@ -322,7 +322,7 @@ loadJSON('data/settings.json').then(s => {
   if (iconRow) {
     const icons = {
       gbp: 'G', facebook: 'f', instagram: '📷', x: '𝕏',
-      linkedin: 'in', apple: '', youtube: '▶'
+      linkedin: 'in', apple: '<svg viewBox="0 0 384 512" width="18" height="18" fill="#fff"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>', youtube: '▶'
     };
     const iconLabels = { gbp: 'Google Reviews', facebook: 'Facebook', instagram: 'Instagram', x: 'X', linkedin: 'LinkedIn', apple: 'Apple Maps', youtube: 'YouTube' };
     iconRow.innerHTML = Object.entries(icons)
@@ -336,14 +336,15 @@ loadJSON('data/settings.json').then(s => {
 document.querySelectorAll('.yt-embed[data-yt-id]').forEach(box => {
   const id = box.getAttribute('data-yt-id');
   const img = document.createElement('img');
-  img.src = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+  img.src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
   img.alt = box.getAttribute('data-yt-alt') || 'YouTube video';
   img.loading = 'lazy';
+  img.onerror = () => { img.src = `https://i.ytimg.com/vi/${id}/mqdefault.jpg`; };
   const playBtn = document.createElement('span');
   playBtn.className = 'yt-play-btn';
   box.appendChild(img);
   box.appendChild(playBtn);
   box.addEventListener('click', () => {
-    box.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1" title="${img.alt}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
+    box.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1&playsinline=1" title="${img.alt}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
   }, { once: true });
 });
