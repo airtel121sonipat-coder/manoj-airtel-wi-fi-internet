@@ -306,6 +306,21 @@ loadJSON('data/settings.json').then(s => {
   if (s.businessNameHtml) {
     document.querySelectorAll('.js-logo').forEach(el => { el.innerHTML = s.businessNameHtml; });
   }
+
+  // Review count/rating — single source of truth from settings.json
+  if (s.reviewCount) {
+    const rc = s.reviewCount;
+    const rating = s.reviewRating || '5.0';
+    const badge = document.getElementById('trustReviewBadge');
+    if (badge) badge.textContent = `⭐ ${rating} · ${rc}+ Google Reviews`;
+    const readoutNum = document.getElementById('readoutReviewNum');
+    if (readoutNum) { readoutNum.setAttribute('data-count', rc); readoutNum.textContent = rc; }
+    const aboutHeading = document.getElementById('aboutReviewHeading');
+    if (aboutHeading) aboutHeading.textContent = `${rc}+ Verified Google Reviews`;
+    const reviewsHeading = document.getElementById('reviewsHeading');
+    if (reviewsHeading) reviewsHeading.textContent = `${rc}+ verified reviews from Sonipat customers`;
+  }
+
   const row = document.getElementById('socialRow');
   const links = {
     facebook: 'Facebook', instagram: 'Instagram', linkedin: 'LinkedIn',

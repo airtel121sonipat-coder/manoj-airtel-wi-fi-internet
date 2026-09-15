@@ -34,7 +34,7 @@
     },
     {
       "q": "Can businesses get a Static IP, and what is it used for?",
-      "a": "Yes — a static IP is available as an add-on for offices and shops, and is useful for remote CCTV viewing, VPN access, hosting a server, or billing software that needs a fixed address."
+      "a": "Yes — a static IP is available as an add-on for offices and shops, and is useful for VPN access, hosting a server, or billing software that needs a fixed address."
     }
   ]
 }

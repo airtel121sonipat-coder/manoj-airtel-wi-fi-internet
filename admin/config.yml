@@ -135,6 +135,8 @@ collections:
         fields:
           - {label: "Phone Number", name: "phone", widget: "string"}
           - {label: "WhatsApp Number (with 91)", name: "whatsapp", widget: "string"}
+          - {label: "Google Review Count (update this after checking GMB — rest of site updates automatically)", name: "reviewCount", widget: "number"}
+          - {label: "Google Review Rating (e.g. 5.0)", name: "reviewRating", widget: "string"}
           - {label: "Business Name (HTML allowed)", name: "businessNameHtml", widget: "string"}
           - label: "Social Links"
             name: "social"
