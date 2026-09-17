@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>IndexNow Submit Tool (Admin Only)</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:640px;margin:40px auto;padding:0 16px;line-height:1.6}
+button{background:#0057ff;color:#fff;border:0;padding:12px 20px;border-radius:6px;font-size:16px;cursor:pointer}
+button:disabled{background:#999;cursor:wait}
+pre{background:#f4f4f4;padding:12px;border-radius:6px;white-space:pre-wrap;font-size:13px}
+.ok{color:green}.err{color:#c00}
+</style>
+</head>
+<body>
+<h2>IndexNow Submit — manojairtelwifiinternet.in</h2>
+<p>Yeh page sirf admin/owner ke liye hai (noindex hai, Google isko crawl nahi karega). Neeche button dabane se saari sitemap URLs ek saath Bing/IndexNow ko submit ho jaayengi.</p>
+<p><strong>Use kab karna hai:</strong> jab bhi koi page add/edit karke naya upload karo, is page ko browser mein kholkar button dabao — Bing (aur ChatGPT Search/Copilot jo Bing index use karte hain) ko turant pata chal jaayega ki site update hui hai.</p>
+<button id="btn" onclick="submitNow()">Submit All URLs to IndexNow</button>
+<pre id="out">Result yahan dikhega...</pre>
+
+<script>
+const KEY = "ac801f6fee0173bf50c924fd970a8feb";
+const HOST = "manojairtelwifiinternet.in";
+const urls = [
+  "https://manojairtelwifiinternet.in/",
+  "https://manojairtelwifiinternet.in/fiber.html",
+  "https://manojairtelwifiinternet.in/airfiber.html",
+  "https://manojairtelwifiinternet.in/business-internet.html",
+  "https://manojairtelwifiinternet.in/postpaid.html",
+  "https://manojairtelwifiinternet.in/plans.html",
+  "https://manojairtelwifiinternet.in/blog.html",
+  "https://manojairtelwifiinternet.in/blog/fiber-vs-airfiber-sonipat.html",
+  "https://manojairtelwifiinternet.in/blog/best-wifi-work-from-home-sonipat.html",
+  "https://manojairtelwifiinternet.in/blog/fiber-speed-guide-sonipat.html",
+  "https://manojairtelwifiinternet.in/blog/static-ip-business-sonipat.html",
+  "https://manojairtelwifiinternet.in/blog/new-fiber-connection-sonipat.html",
+  "https://manojairtelwifiinternet.in/blog/bulk-wifi-housing-society-sonipat.html",
+  "https://manojairtelwifiinternet.in/sonipat.html",
+  "https://manojairtelwifiinternet.in/kundli.html",
+  "https://manojairtelwifiinternet.in/gohana.html",
+  "https://manojairtelwifiinternet.in/kharkhoda.html",
+  "https://manojairtelwifiinternet.in/rai.html",
+  "https://manojairtelwifiinternet.in/murthal.html",
+  "https://manojairtelwifiinternet.in/barhi.html",
+  "https://manojairtelwifiinternet.in/ganaur.html",
+  "https://manojairtelwifiinternet.in/tdi-kingsbury.html",
+  "https://manojairtelwifiinternet.in/privacy-policy.html",
+  "https://manojairtelwifiinternet.in/terms.html",
+  "https://manojairtelwifiinternet.in/disclaimer.html"
+];
+
+async function submitNow(){
+  const btn = document.getElementById('btn');
+  const out = document.getElementById('out');
+  btn.disabled = true;
+  out.textContent = "Submitting " + urls.length + " URLs...";
+  try{
+    const res = await fetch("https://api.indexnow.org/indexnow", {
+      method: "POST",
+      headers: {"Content-Type": "application/json; charset=utf-8"},
+      body: JSON.stringify({ host: HOST, key: KEY, keyLocation: `https://${HOST}/${KEY}.txt`, urlList: urls })
+    });
+    if(res.status === 200 || res.status === 202){
+      out.innerHTML = `<span class="ok">Success! Status ${res.status} — ${urls.length} URLs submitted to IndexNow (Bing).</span>`;
+    } else {
+      out.innerHTML = `<span class="err">Status ${res.status} — response: ${await res.text()}</span>`;
+    }
+  }catch(e){
+    out.innerHTML = `<span class="err">Error: ${e.message}. Note: agar yeh CORS block kare to yeh normal hai — is case mein sitemap ping method use hoga (automatic, koi action nahi chahiye).</span>`;
+  }
+  btn.disabled = false;
+}
+</script>
+</body>
+</html>
