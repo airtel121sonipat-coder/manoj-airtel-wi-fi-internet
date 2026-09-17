@@ -10,9 +10,9 @@
   --line:#F0DDE0;
   --white:#FFFFFF;
   --radius:10px;
-  --display:"Sora",sans-serif;
-  --body:"Inter",sans-serif;
-  --mono:"IBM Plex Mono",monospace;
+  --display:"Sora",system-ui,-apple-system,sans-serif;
+  --body:"Inter",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
   --maxw:1180px;
 }
 
@@ -68,7 +68,8 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .nav-toggle span{width:22px;height:2px;background:var(--ink);}
 
 /* ===== Hero ===== */
-.hero{position:relative;overflow:hidden;padding:5rem 0 4rem;background:#FFFFFF;color:var(--ink);}
+.hero{position:relative;overflow:hidden;padding:5rem 0 4rem;background:#FFFFFF;color:var(--ink);min-height:520px;}
+@media (max-width:520px){.hero{min-height:640px;}}
 .hero-pulse{position:absolute;inset:0;opacity:.5;pointer-events:none;}
 .pulse-line{position:absolute;left:-10%;right:-10%;height:1px;background:linear-gradient(90deg,transparent,var(--red),transparent);animation:pulse 6s ease-in-out infinite;}
 .l1{top:20%;animation-delay:0s;}
