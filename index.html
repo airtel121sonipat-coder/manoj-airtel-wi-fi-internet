@@ -176,8 +176,8 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .about-card p{font-size:.92rem;margin:0;}
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 .area-check-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem 1.3rem;margin:1.4rem 0 1.6rem;box-shadow:0 4px 16px rgba(0,0,0,.06);text-align:left;}
-.area-check-title{font-size:1.15rem;margin:0 0 .3rem;line-height:1.35;}
-.area-check-title-hi{display:block;font-size:.95rem;color:var(--brand,#e40000);font-weight:700;margin-top:.15rem;}
+.area-check-title{font-size:1.2rem;margin:0 0 .4rem;line-height:1.35;color:var(--ink);}
+.area-check-title-hi{display:block;font-size:1.05rem;color:#e40000;font-weight:700;margin-top:.35rem;line-height:1.4;}
 .area-check-sub{font-size:.88rem;color:#555;margin:0 0 1rem;}
 .area-check-form{display:flex;flex-direction:column;gap:.7rem;}
 .area-check-form input{padding:.75rem .9rem;border:1px solid var(--line);border-radius:8px;font-size:.95rem;width:100%;box-sizing:border-box;}
@@ -551,14 +551,13 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
       <div class="trust-badges">
         <span id="trustReviewBadge">⭐ 5.0 · 222+ Google Reviews</span>
         <span>🚀 Same-Day Installation</span>
-        <span>✅ Authorized Airtel Partner Since 2016</span>
       </div>
       <div class="social-icon-row" id="socialIconRow"></div>
 
       <!-- CHECK YOUR AREA - lead capture form -->
       <div class="area-check-card" id="areaCheckCard">
-        <h2 class="area-check-title">Is Fiber/AirFiber Available at Your Location? <span class="area-check-title-hi">Apna Area Check Karein</span></h2>
-        <p class="area-check-sub">Fill in 3 quick details — Manoj Airtel Wi-Fi Internet team will confirm availability on WhatsApp within minutes.<br>3 details bharein — team WhatsApp par kuch minute mein availability confirm karegi.</p>
+        <h2 class="area-check-title">Is Fiber/AirFiber Available at Your Location? <span class="area-check-title-hi">आपके घर Airtel Fiber या AirFiber उपलब्ध है या नहीं, अभी चेक करें</span></h2>
+        <p class="area-check-sub">Fill in 3 quick details — get availability confirmed on WhatsApp within minutes.<br>3 details bharein — WhatsApp par kuch minute mein availability confirm ho jayegi.</p>
         <form id="areaCheckForm" class="area-check-form">
           <input type="text" id="acName" name="name" placeholder="Your Name / Apna Naam" required autocomplete="name">
           <input type="tel" id="acPhone" name="phone" placeholder="Mobile Number / Mobile Number" pattern="[0-9]{10}" maxlength="10" required autocomplete="tel" inputmode="numeric">
@@ -569,9 +568,6 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
       </div>
 
       <div class="readout">
-        <div class="readout-item">
-          <span class="readout-label" style="font-size:1.05rem;font-weight:700;color:var(--ink);display:block">Serving Sonipat Since 2016</span>
-        </div>
         <div class="readout-item">
           <span class="readout-num" id="readoutReviewNum" data-count="222">222</span><span class="readout-suffix">+</span>
           <span class="readout-label">Google reviews</span>
