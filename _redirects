@@ -1,2 +1,7 @@
 # Short URL redirect — Bing Maps listing
 /bing  https://www.bing.com/maps?q=MANOJ+AIRTEL+WIFI+INTERNET+Sonipat  301
+
+# Fix duplicate-title/duplicate-meta issue flagged by Bing Webmaster Tools:
+# /postpaid (no extension) and /postpaid.html were both resolving live.
+# Force the clean URL to redirect to the canonical .html file.
+/postpaid  /postpaid.html  301
