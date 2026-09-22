@@ -363,3 +363,43 @@ document.querySelectorAll('.yt-embed[data-yt-id]').forEach(box => {
     box.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1&playsinline=1" title="${img.alt}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
   }, { once: true });
 });
+
+// ===== Check Your Area - lead capture form (WhatsApp handoff) =====
+(function () {
+  const form = document.getElementById('areaCheckForm');
+  if (!form) return;
+  const locBtn = document.getElementById('acLocationBtn');
+  const locStatus = document.getElementById('acLocationStatus');
+  let locationText = '';
+
+  locBtn.addEventListener('click', () => {
+    if (!navigator.geolocation) {
+      locStatus.textContent = 'Location support nahi hai is device par — WhatsApp par area ka naam likh dein.';
+      return;
+    }
+    locBtn.textContent = '📍 Location le rahe hain...';
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const { latitude, longitude } = pos.coords;
+        locationText = `https://maps.google.com/?q=${latitude},${longitude}`;
+        locBtn.textContent = '✅ Location Add Ho Gayi';
+        locBtn.classList.add('is-active');
+        locStatus.textContent = 'Location mil gayi — ab form submit karein.';
+      },
+      () => {
+        locBtn.textContent = '📍 Share My Location / Apni Location Bhejein';
+        locStatus.textContent = 'Location share nahi hui — koi baat nahi, WhatsApp par area ka naam likh dein.';
+      }
+    );
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('acName').value.trim();
+    const phone = document.getElementById('acPhone').value.trim();
+    if (!name || !phone) return;
+    let msg = `Hello, main ${name} hoon. Mera number ${phone} hai. Please check karein ki mere area mein Airtel Fiber/AirFiber connection available hai ya nahi.`;
+    if (locationText) msg += `\nMeri location: ${locationText}`;
+    window.open(`https://wa.me/919255820000?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+  });
+})();
