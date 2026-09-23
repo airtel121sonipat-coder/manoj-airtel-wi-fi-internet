@@ -138,7 +138,7 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .readout{display:flex;gap:2rem;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.15);padding-top:1.6rem;}
 .trust-badges{display:flex;flex-wrap:wrap;gap:.7rem;margin:0 0 1.6rem;}
 .trust-badges span{font-size:.78rem;font-family:var(--mono);color:#D9D7DE;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:20px;padding:.4rem .8rem;}
-.hero .trust-badges span{color:var(--ink);background:#fff;border-color:var(--line);}
+.hero .trust-badges span{color:var(--ink);background:#fff;border-color:var(--line);font-weight:700;font-size:.85rem;padding:.5rem .95rem;box-shadow:0 2px 6px rgba(0,0,0,.05);}
 .social-icon-row{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem;}
 .social-icon{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.05rem;color:#fff;transition:transform .15s ease;box-shadow:0 2px 6px rgba(0,0,0,.15);}
 .social-icon:hover{transform:translateY(-3px) scale(1.05);}
@@ -180,7 +180,9 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .area-check-title-hi{display:block;font-size:1.05rem;color:#e40000;font-weight:700;margin-top:.35rem;line-height:1.4;}
 .area-check-sub{font-size:.88rem;color:#555;margin:0 0 1rem;}
 .area-check-form{display:flex;flex-direction:column;gap:.7rem;}
-.area-check-form input{padding:.75rem .9rem;border:1px solid var(--line);border-radius:8px;font-size:.95rem;width:100%;box-sizing:border-box;}
+.area-check-form input{padding:.85rem .95rem;border:1.5px solid #333;border-radius:8px;font-size:1rem;font-weight:600;color:var(--ink);width:100%;box-sizing:border-box;background:#fff;}
+.area-check-form input::placeholder{color:#555;font-weight:600;opacity:1;}
+.area-check-form input:focus{border-color:#1ebe5d;outline:none;box-shadow:0 0 0 3px rgba(30,190,93,.15);}
 .area-check-location-btn{padding:.7rem .9rem;border:1px dashed var(--line);border-radius:8px;background:#f7f7f7;font-size:.92rem;cursor:pointer;text-align:center;}
 .area-check-location-btn.is-active{border-color:#1a8a3f;color:#1a8a3f;background:#f0fbf3;}
 .area-check-location-status{font-size:.82rem;color:#1a8a3f;min-height:1em;display:block;}
@@ -549,34 +551,24 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
         <a href="tel:9255820000" class="btn btn-primary">Call 9255820000</a>
       </div>
       <div class="trust-badges">
-        <span id="trustReviewBadge">⭐ 5.0 · 222+ Google Reviews</span>
+        <span id="trustReviewBadge">⭐ 5.0 (222+ Reviews)</span>
         <span>🚀 Same-Day Installation</span>
+        <span>⚡ Up to 1 Gbps Speed</span>
       </div>
       <div class="social-icon-row" id="socialIconRow"></div>
 
       <!-- CHECK YOUR AREA - lead capture form -->
       <div class="area-check-card" id="areaCheckCard">
-        <h2 class="area-check-title">Is Fiber/AirFiber Available at Your Location? <span class="area-check-title-hi">आपके घर Airtel Fiber या AirFiber उपलब्ध है या नहीं, अभी चेक करें</span></h2>
-        <p class="area-check-sub">Fill in 3 quick details — get availability confirmed on WhatsApp within minutes.<br>3 details bharein — WhatsApp par kuch minute mein availability confirm ho jayegi.</p>
+        <h2 class="area-check-title">Is Fiber/AirFiber Available at Your Location? <span class="area-check-title-hi">आपके घर Airtel Fiber या AirFiber उपलब्ध है या नहीं, अभी चेक करें!</span></h2>
         <form id="areaCheckForm" class="area-check-form">
           <input type="text" id="acName" name="name" placeholder="Your Name / Apna Naam" required autocomplete="name">
-          <input type="tel" id="acPhone" name="phone" placeholder="Mobile Number / Mobile Number" pattern="[0-9]{10}" maxlength="10" required autocomplete="tel" inputmode="numeric">
+          <input type="tel" id="acPhone" name="phone" placeholder="Mobile Number / मोबाइल नंबर" pattern="[0-9]{10}" maxlength="10" required autocomplete="tel" inputmode="numeric">
           <button type="button" id="acLocationBtn" class="area-check-location-btn">📍 Share My Location / Apni Location Bhejein</button>
           <span id="acLocationStatus" class="area-check-location-status"></span>
-          <button type="submit" id="acSubmitBtn" class="area-check-submit">Check Availability on WhatsApp / WhatsApp par Check Karein</button>
+          <button type="submit" id="acSubmitBtn" class="area-check-submit">⚡ WhatsApp Par Availability Check Karein</button>
         </form>
       </div>
 
-      <div class="readout">
-        <div class="readout-item">
-          <span class="readout-num" id="readoutReviewNum" data-count="222">222</span><span class="readout-suffix">+</span>
-          <span class="readout-label">Google reviews</span>
-        </div>
-        <div class="readout-item">
-          <span class="readout-suffix" style="display:block">Up to</span><span class="readout-num" data-count="1">1</span><span class="readout-suffix">Gbps</span>
-          <span class="readout-label">top fiber speed</span>
-        </div>
-      </div>
       </div>
       <div class="hero-visual">
         <a href="https://wa.me/919255820000?text=Hello%2C%20I%20want%20a%20new%20Airtel%20Fiber%2FAirFiber%20connection" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
