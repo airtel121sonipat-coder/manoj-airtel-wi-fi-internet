@@ -319,6 +319,10 @@ loadJSON('data/settings.json').then(s => {
     if (aboutHeading) aboutHeading.textContent = `${rc}+ Verified Google Reviews`;
     const reviewsHeading = document.getElementById('reviewsHeading');
     if (reviewsHeading) reviewsHeading.textContent = `${rc}+ verified reviews from Sonipat customers`;
+    const whySub = document.getElementById('whyReviewSub');
+    if (whySub) whySub.textContent = `${rc}+ customer reviews`;
+    const whyHeading = document.getElementById('whyReviewHeading');
+    if (whyHeading) whyHeading.textContent = `${rating}★ Google Rating`;
   }
 
   const row = document.getElementById('socialRow');
@@ -401,5 +405,29 @@ document.querySelectorAll('.yt-embed[data-yt-id]').forEach(box => {
     let msg = `Hello, main ${name} hoon. Mera number ${phone} hai. Please check karein ki mere area mein Airtel Fiber/AirFiber connection available hai ya nahi.`;
     if (locationText) msg += `\nMeri location: ${locationText}`;
     window.open(`https://wa.me/919255820000?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+    if (typeof gtag === 'function') gtag('event', 'generate_lead', { event_category: 'Lead Form', event_label: 'Check Your Area Form' });
   });
 })();
+
+// ===== GA4 conversion event tracking =====
+// Covers: Call clicks, WhatsApp clicks, main Check-Availability CTAs, and plan "Book This Plan" CTAs
+// (plan cards + lead form are already tracked above / separately — this delegated listener
+// catches every tel:/wa.me link site-wide, including ones rendered later from JSON data).
+document.addEventListener('click', (e) => {
+  if (typeof gtag !== 'function') return;
+  const link = e.target.closest('a');
+  if (!link || !link.href) return;
+
+  if (link.href.startsWith('tel:')) {
+    gtag('event', 'phone_call_click', { event_category: 'Contact', event_label: link.href });
+  } else if (link.href.includes('wa.me')) {
+    gtag('event', 'whatsapp_click', { event_category: 'Contact', event_label: link.closest('.plan-card') ? 'Plan CTA' : (link.id || link.className || 'WhatsApp Link') });
+  }
+});
+
+// leadForm (WhatsApp callback form) submit tracking
+if (leadForm) {
+  leadForm.addEventListener('submit', () => {
+    if (typeof gtag === 'function') gtag('event', 'generate_lead', { event_category: 'Lead Form', event_label: 'Get a Callback Form' });
+  });
+}

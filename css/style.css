@@ -188,6 +188,24 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .ott-list{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.7rem;}
 .ott-list li{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:20px;padding:.5rem 1rem;font-size:.88rem;font-family:var(--mono);}
 
+/* Fiber vs AirFiber compare */
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.8rem;}
+.compare-card{border:1px solid var(--line);border-radius:12px;padding:1.4rem 1.3rem;}
+.compare-card h3{font-size:1.05rem;margin:0 0 .8rem;}
+.compare-card ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.55rem;}
+.compare-card li{font-size:.92rem;color:var(--slate);padding-left:1.2rem;position:relative;}
+.compare-card li::before{content:"•";position:absolute;left:0;color:var(--ink);}
+@media (max-width:600px){.compare-grid{grid-template-columns:1fr;}}
+
+/* Hindi FAQ (details/summary accordion, no JS needed) */
+.faq-hi-list{margin-top:2rem;border-top:1px solid var(--line);}
+.faq-hi-item{border-bottom:1px solid var(--line);padding:.2rem 0;}
+.faq-hi-item summary{cursor:pointer;font-family:var(--display);font-weight:600;font-size:1rem;padding:1rem 1.6rem 1rem 0;position:relative;list-style:none;}
+.faq-hi-item summary::-webkit-details-marker{display:none;}
+.faq-hi-item summary::after{content:"+";position:absolute;right:0;top:1rem;font-size:1.2rem;}
+.faq-hi-item[open] summary::after{content:"−";}
+.faq-hi-item p{color:var(--slate);padding:0 0 1.1rem;margin:0;font-size:.95rem;}
+
 /* Gallery */
 .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.8rem;margin-top:2rem;}
 .gallery-grid figure{margin:0;background:var(--paper-alt);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;cursor:pointer;}
