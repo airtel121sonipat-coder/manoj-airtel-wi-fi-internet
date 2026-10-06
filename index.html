@@ -130,7 +130,7 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
   .hero-visual{display:block;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.14);overflow:hidden;}
   .hero-visual img{width:100%;height:auto;display:block;object-fit:contain;}
 }
-.eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin-bottom:.9rem;}
+.eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00;margin-bottom:.9rem;}.ott .eyebrow,.site-footer .eyebrow{color:var(--amber)}
 .hero h1{font-size:2.5rem;line-height:1.2;color:var(--ink);}
 .hero h1 em{color:var(--red);font-style:normal;}
 .hero-sub{color:#3D3A46;font-size:1.05rem;max-width:560px;}
@@ -578,8 +578,8 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
       <div class="area-check-card" id="areaCheckCard">
         <h2 class="area-check-title">Is Fiber/AirFiber Available at Your Location? <span class="area-check-title-hi">आपके घर Airtel Fiber या AirFiber उपलब्ध है या नहीं, अभी चेक करें!</span></h2>
         <form id="areaCheckForm" class="area-check-form">
-          <input type="text" id="acName" name="name" placeholder="Your Name / Apna Naam" required autocomplete="name">
-          <input type="tel" id="acPhone" name="phone" placeholder="Mobile Number / मोबाइल नंबर" pattern="[0-9]{10}" maxlength="10" required autocomplete="tel" inputmode="numeric">
+          <input type="text" aria-label="Your name" id="acName" name="name" placeholder="Your Name / Apna Naam" required autocomplete="name">
+          <input type="tel" aria-label="Mobile number" id="acPhone" name="phone" placeholder="Mobile Number / मोबाइल नंबर" pattern="[0-9]{10}" maxlength="10" required autocomplete="tel" inputmode="numeric">
           <button type="button" id="acLocationBtn" class="area-check-location-btn">📍 Share My Location / Apni Location Bhejein</button>
           <span id="acLocationStatus" class="area-check-location-status"></span>
           <button type="submit" id="acSubmitBtn" class="area-check-submit">⚡ WhatsApp Par Availability Check Karein</button>
@@ -765,7 +765,7 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
       </div>
       <div class="area-search-hub">
         <p class="eyebrow center" style="margin-top:2.5rem">Industrial & Colony Coverage</p>
-        <input type="text" id="areaSearchInput" class="area-search-input" placeholder="Search your area, colony, or industrial estate...">
+        <input type="text" aria-label="Search your area" id="areaSearchInput" class="area-search-input" placeholder="Search your area, colony, or industrial estate...">
         <div class="micro-area-group">
           <span class="micro-area-label">Industrial</span>
           <div class="micro-area-chips" id="industrialChips">
@@ -876,9 +876,9 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
       <h2 class="center">Get a callback on WhatsApp</h2>
       <p class="section-note center">Fill this in — it opens WhatsApp with your details ready to send, no typing needed.</p>
       <form id="leadForm" class="lead-form">
-        <input type="text" id="leadName" placeholder="Your name" required>
-        <input type="tel" id="leadPhone" placeholder="Your phone number" required pattern="[0-9]{10}" maxlength="10">
-        <select id="leadService">
+        <input type="text" aria-label="Your name" id="leadName" placeholder="Your name" required>
+        <input type="tel" aria-label="Your phone number" id="leadPhone" placeholder="Your phone number" required pattern="[0-9]{10}" maxlength="10">
+        <select id="leadService" aria-label="Choose a service">
           <option value="Xstream Fiber">Airtel Xstream Fiber</option>
           <option value="AirFiber">Airtel AirFiber</option>
           <option value="Postpaid/MNP">Postpaid SIM / MNP</option>

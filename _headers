@@ -1,0 +1,7 @@
+# Netlify cache rules. Images and fonts: 30 days. CSS/JS: 1 day, so edits show up quickly.
+/assets/*
+  Cache-Control: public, max-age=2592000
+/css/*
+  Cache-Control: public, max-age=86400
+/js/*
+  Cache-Control: public, max-age=86400
