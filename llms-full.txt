@@ -2,7 +2,7 @@
 
 ## Business overview
 
-Manoj Airtel Wi-Fi Internet is an authorized Airtel dealer based in Sonipat, Haryana, India, operating since 2016. The business provides Airtel Xstream Fiber (wired) and Airtel AirFiber (wireless) broadband with speeds up to 1 Gbps for homes, offices and businesses, along with Airtel postpaid and corporate SIM connections, CCTV installation, and Internet Leased Line (ILL) solutions.
+Manoj Airtel Wi-Fi Internet is an authorized Airtel dealer based in Sonipat, Haryana, India, operating since 2016. The business provides Airtel Xstream Fiber (wired) and Airtel AirFiber (wireless) broadband with speeds up to 1 Gbps for homes, offices and businesses, along with Airtel postpaid and corporate SIM connections, and Internet Leased Line (ILL) solutions.
 
 - Business name: Manoj Airtel Wi-Fi Internet
 - Established: 2016
@@ -18,9 +18,8 @@ Manoj Airtel Wi-Fi Internet is an authorized Airtel dealer based in Sonipat, Har
 3. Airtel Postpaid SIM & MNP — individual and family postpaid mobile plans, number porting support
 4. Airtel Corporate Postpaid SIMs — business mobile plans with GST input credit, bulk porting, dedicated relationship manager
 5. Internet Leased Line (ILL) — dedicated 1:1 bandwidth for offices, factories, warehouses and IT setups
-6. CCTV Installation — HD/4K camera installation with remote viewing, indoor and outdoor
-7. PG & Hostel Wi-Fi Connection — Wi-Fi setup for PG accommodations and hostels, shared or private room plans
-8. Society & Apartment Bulk Wi-Fi Connection — bulk Wi-Fi/broadband setup for housing societies and apartment complexes (including TDI Kingsbury), coordinated installation across multiple flats/towers
+6. PG & Hostel Wi-Fi Connection — Wi-Fi setup for PG accommodations and hostels, shared or private room plans
+7. Society & Apartment Bulk Wi-Fi Connection — bulk Wi-Fi/broadband setup for housing societies and apartment complexes (including TDI Kingsbury), coordinated installation across multiple flats/towers
 
 ## Airtel Xstream Fiber plans (wired broadband)
 
