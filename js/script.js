@@ -5,7 +5,6 @@ async function loadJSON(path) {
   try {
     const res = await fetch(fullPath);
     if (!res.ok) throw new Error('HTTP ' + res.status);
-    console.log('[loadJSON] OK:', fullPath);
     return await res.json();
   } catch (e) {
     console.error('[loadJSON] FAILED:', fullPath, '—', e.message);

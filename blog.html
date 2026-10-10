@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F7RFMDV171"></script>
+
 <script type="text/javascript">
     window.addEventListener("load",function(){setTimeout(function(){
     (function(c,l,a,r,i,t,y){
@@ -13,12 +13,7 @@
     },3000);});
 </script>
 
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-F7RFMDV171');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-F7RFMDV171');(function(){var d=false;function g(){if(d)return;d=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-F7RFMDV171';document.head.appendChild(s);}['scroll','touchstart','click','keydown','mousemove'].forEach(function(e){window.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,3500);});})();</script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,11 +36,15 @@
 <meta name="twitter:description" content="Tips and guides on Airtel Fiber, AirFiber, postpaid plans and home internet in Sonipat.">
 
 <meta name="robots" content="index, follow">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" href="assets/fonts/sora-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{font-family:"Sora";font-style:normal;font-weight:100 800;font-display:swap;src:url(assets/fonts/sora-latin-wght.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-latin-wght.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-rupee.woff2) format("woff2");unicode-range:U+20B9}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/plex-mono-500.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/plex-mono-600.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
 /* ===== Tokens ===== */
 :root{
   --ink:#1A1A1A;
@@ -210,7 +209,7 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .service-features li{padding:.28rem 0;}
 .service-more-link{display:block;text-align:center;font-size:.82rem;margin-top:.7rem;color:var(--slate);}
 .service-more-link:hover{color:var(--red);}
-.card .tag{font-family:var(--mono);font-size:.72rem;color:var(--red);text-transform:uppercase;letter-spacing:.05em;}
+.card .tag{font-family:var(--mono);font-size:.72rem;color:var(--red-dark);text-transform:uppercase;letter-spacing:.05em;}
 
 /* Plans */
 .plan-tabs{display:flex;justify-content:center;gap:.6rem;margin:1.6rem 0 0;}
@@ -252,7 +251,7 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 /* Why */
 .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.6rem;margin-top:2.2rem;}
 .why-item{border-top:2px solid var(--ink);padding-top:1rem;}
-.why-num{font-family:var(--mono);color:var(--red);font-size:.85rem;}
+.why-num{font-family:var(--mono);color:var(--red-dark);font-size:.85rem;}
 
 /* Areas */
 .area-chips{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-top:2rem;}
@@ -275,7 +274,7 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .faq-q{width:100%;text-align:left;background:none;border:0;padding:1.1rem 0;font-family:var(--display);font-weight:600;font-size:1rem;cursor:pointer;display:flex;justify-content:space-between;gap:1rem;}
 .faq-a{padding:0 0 1.1rem;color:var(--slate);display:none;}
 .faq-item.open .faq-a{display:block;}
-.faq-icon{color:var(--red);}
+.faq-icon{color:var(--red-dark);}
 
 /* Location */
 .location-inner{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;}
