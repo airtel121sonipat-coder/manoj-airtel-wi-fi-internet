@@ -322,6 +322,15 @@ loadJSON('data/settings.json').then(s => {
     if (whySub) whySub.textContent = `${rc}+ customer reviews`;
     const whyHeading = document.getElementById('whyReviewHeading');
     if (whyHeading) whyHeading.textContent = `${rating}★ Google Rating`;
+    const storeS = document.getElementById('storeReviewSonipat');
+    if (storeS) storeS.textContent = `${rc}+`;
+  }
+  if (s.kundliReviewCount) {
+    const kc = s.kundliReviewCount;
+    const storeK = document.getElementById('storeReviewKundli');
+    if (storeK) storeK.textContent = `${kc}+`;
+    const kLine = document.getElementById('kundliReviewLine');
+    if (kLine) kLine.textContent = `Our Kundli office has ${kc}+ Google reviews from local customers.`;
   }
 
   const row = document.getElementById('socialRow');
