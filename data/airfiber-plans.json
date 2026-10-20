@@ -31,7 +31,7 @@
       "price": "₹799",
       "period": "/mo",
       "features": [
-        "Unlimited Fast Data",
+        "Up to 1TB/month high-speed data; post-limit speed as per Airtel terms",
         "Free Wi-Fi Router",
         "Wireless Setup — No Digging Required"
       ]
@@ -49,14 +49,14 @@
       ]
     },
     {
-      "name": "Best Value",
+      "name": "Value Plan",
       "speed": "100",
       "unit": "Mbps",
       "price": "₹999",
       "period": "/mo",
       "badge": "Most Popular",
       "features": [
-        "Unlimited High-Speed Data",
+        "Up to 1TB/month high-speed data; post-limit speed as per Airtel terms",
         "Wireless Setup — No Digging Required"
       ],
       "ottBadges": [

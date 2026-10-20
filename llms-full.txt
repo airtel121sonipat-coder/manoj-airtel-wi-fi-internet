@@ -28,20 +28,21 @@ Manoj Airtel Wi-Fi Internet is an authorized Airtel dealer based in Sonipat, Har
 - Entertainment: 30 Mbps, ₹599/month — 350+ TV channels, 22+ OTT apps (excl. Netflix, Prime Video, Apple TV), free landline calling
 - Popular: 100 Mbps, ₹799/month — Unlimited fast data, free landline calling, free Wi-Fi router
 - Entertainment Plus: 100 Mbps, ₹899/month — 350+ TV channels, 22+ OTT apps, free landline calling
-- Best Value (Most Popular): 100 Mbps, ₹999/month — Unlimited high-speed data, free landline calling, bundled OTT (Netflix, Amazon Prime Video and more)
+- Value Plan (Most Popular): 100 Mbps, ₹999/month — Unlimited high-speed data, free landline calling, bundled OTT (Netflix, Amazon Prime Video and more)
 - Ultimate TV + OTT: 100 Mbps, ₹1,199/month — 350+ TV channels, free landline calling
 - Ultra Speed: 300 Mbps, ₹1,599/month — 350+ TV channels, free landline calling
+- Ultra Speed 1 Gbps: 1 Gbps, ₹3,999/month — 350+ TV channels, free landline calling
 
 ## Airtel AirFiber plans (wireless broadband)
 
-- Basic: 40 Mbps, ₹499/month — Unlimited data, free Wi-Fi router, wireless setup (no digging required)
+- Basic: 40 Mbps, ₹499/month — up to 1 TB/month high-speed data (post-limit speed as per Airtel terms), free Wi-Fi router, wireless setup (no digging required)
 - Entertainment: 30 Mbps, ₹599/month — 350+ TV channels, 22+ OTT apps, wireless setup
-- Popular: 100 Mbps, ₹799/month — Unlimited fast data, free Wi-Fi router, wireless setup
+- Popular: 100 Mbps, ₹799/month — up to 1 TB/month high-speed data (post-limit speed as per Airtel terms), free Wi-Fi router, wireless setup
 - Entertainment Plus: 100 Mbps, ₹899/month — 350+ TV channels, 22+ OTT apps, wireless setup
-- Best Value (Most Popular): 100 Mbps, ₹999/month — Unlimited high-speed data, wireless setup, bundled OTT
+- Value Plan (Most Popular): 100 Mbps, ₹999/month — up to 1 TB/month high-speed data (post-limit speed as per Airtel terms), wireless setup, bundled OTT
 - Ultimate TV + OTT: 100 Mbps, ₹1,199/month — 350+ TV channels, wireless setup
 
-Prices are indicative; customers are advised to confirm current offers via phone or WhatsApp before booking.
+Prices are indicative and plus 18% GST; installation and the Wi-Fi router are free on every plan; customers are advised to confirm current offers via phone or WhatsApp before booking.
 
 ## Airtel Corporate Postpaid SIM plans (business mobile)
 
@@ -62,10 +63,22 @@ Q: What is Airtel AirFiber?
 A: Airtel AirFiber is a wireless high-speed broadband service that delivers fast internet without laying fiber cables — ideal where digging isn't possible.
 
 Q: Do you provide same-day installation?
-A: Yes, in most serviceable locations, depending on feasibility at the customer's address.
+A: About 70% of installations are completed the same day. For farther locations the installation is completed by the next day. Subject to feasibility at the customer's address.
+
+Q: Do I need to visit the store?
+A: No. On a call or online booking, service is given at the customer's location (door-to-door), including online booking for Panipat, Rohtak, Karnal, Kurukshetra and Hisar. For these five cities the actual installation is carried out by Airtel's own technicians.
+
+Q: Is installation free? Is the router free?
+A: Yes. Installation and the Wi-Fi router are free on every Airtel plan.
+
+Q: How does the ₹1,500 advance work?
+A: The ₹1,500 advance is adjusted in your first three bills (about 2 months 16 days of free internet on the ₹499 plan with 18% GST, about 1 month 17 days on the ₹799 plan), and from the 3rd bill you get ₹100 off every bill for the next 10 months. Subject to Airtel's current offer and billing terms.
+
+Q: What are the support hours?
+A: Sonipat office 6:00 AM to 11:00 PM daily; Kundli office 7:00 AM to 7:30 PM. Call or WhatsApp 9255820000.
 
 Q: Which areas do you serve?
-A: Sonipat, Kundli, Rai, Murthal, Kharkhoda, Ganaur, Gohana, Barhi and surrounding areas.
+A: Sonipat, Kundli, Rai, Murthal, Kharkhoda, Ganaur, Gohana, Barhi and surrounding areas. Online booking also available for Panipat, Rohtak, Karnal, Kurukshetra and Hisar.
 
 Q: Can I port my existing number to Airtel Postpaid?
 A: Yes — Mobile Number Portability (MNP) is supported; customers can bring their current number to an Airtel postpaid plan.
@@ -76,7 +89,8 @@ A: Yes — Mobile Number Portability (MNP) is supported; customers can bring the
 - WhatsApp link: https://wa.me/919255820000
 - Sonipat office: Shop No. 13, 2nd Floor, Subhash Chowk, Municipal Colony, Ashok Nagar, Atlas Road, Sonipat, Haryana 131001
 - Kundli office: Shop No. 14, Dahiya Market, near Makhan Bhog, Kundli, Sonipat, Haryana 131028 (hours 7:00 AM to 7:30 PM)
-- Hours: 6:00 AM – 11:00 PM, daily
-- Google reviews: 160+ verified reviews
+- Sonipat hours: 6:00 AM – 11:00 PM, daily
+- Kundli hours: 7:00 AM – 7:30 PM
+- Google reviews: 238+ (Sonipat office), 24+ (Kundli office), rated separately
 
-Last updated: 2026-08-10
+Last updated: 2026-10-20
