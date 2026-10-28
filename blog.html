@@ -17,7 +17,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog — Manoj Airtel Wi-Fi Internet, Sonipat</title>
+<title>Airtel Broadband Blog Sonipat | Call 9255820000</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -25,14 +25,14 @@
 <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
 <meta name="description" content="Tips and guides on Airtel Fiber, AirFiber, postpaid plans and home internet in Sonipat.">
 <link rel="canonical" href="https://manojairtelwifiinternet.in/blog.html">
-<meta property="og:title" content="Blog — Manoj Airtel Wi-Fi Internet, Sonipat">
+<meta property="og:title" content="Airtel Broadband Blog Sonipat | Call 9255820000">
 <meta property="og:description" content="Tips and guides on Airtel Fiber, AirFiber, postpaid plans and home internet in Sonipat.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://manojairtelwifiinternet.in/blog.html">
 <meta property="og:image" content="https://manojairtelwifiinternet.in/assets/photos/og-cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://manojairtelwifiinternet.in/assets/photos/og-cover.jpg">
-<meta name="twitter:title" content="Blog — Manoj Airtel Wi-Fi Internet, Sonipat">
+<meta name="twitter:title" content="Airtel Broadband Blog Sonipat | Call 9255820000">
 <meta name="twitter:description" content="Tips and guides on Airtel Fiber, AirFiber, postpaid plans and home internet in Sonipat.">
 
 <meta name="robots" content="index, follow">
@@ -403,10 +403,11 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
   <p class="footer-bottom">© <span id="year"></span> Manoj Airtel Wi-Fi Internet. Airtel is a registered trademark of Bharti Airtel Ltd; this is an authorized dealership, not the official Airtel website.</p>
 </footer>
 
-<nav class="mobile-bottom-nav" aria-label="Mobile quick navigation"><a href="https://wa.me/919255820000" class="mbn-whatsapp" target="_blank" rel="noopener"><span class="mbn-icon">💬</span>WhatsApp</a><a href="index.html#plans"><span class="mbn-icon">🏷️</span>Plans</a><a href="index.html#gallery"><span class="mbn-icon">🖼️</span>Gallery</a><a href="index.html#services"><span class="mbn-icon">⚡</span>Services</a><a href="tel:9255820000" class="mbn-call"><span class="mbn-icon">📞</span>Call</a></nav>
+<nav class="mobile-bottom-nav" aria-label="Mobile quick navigation"><a href="https://wa.me/919255820000" class="mbn-whatsapp" target="_blank" rel="noopener"><span class="mbn-icon">💬</span>WhatsApp</a><a href="index.html#plans"><span class="mbn-icon">🏷️</span>Plans</a><a href="index.html#gallery"><span class="mbn-icon">🖼️</span>Gallery</a><a href="index.html#services"><span class="mbn-icon">⚡</span>Services</a><a href="tel:9255820000" class="mbn-call"><span class="mbn-icon">📞</span>Call 9255820000</a></nav>
 <script src="js/script.js"></script>
 <script>
 fetch('data/blog-posts.json').then(r=>r.json()).then(posts=>{
+  posts.sort((a,b)=>b.date.localeCompare(a.date));
   document.getElementById('blogGrid').innerHTML = posts.map(p => `
     <a class="blog-card" href="blog/${p.slug}.html">
       <span class="blog-date">${p.date}</span>
