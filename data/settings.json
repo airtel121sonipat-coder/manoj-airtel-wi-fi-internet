@@ -1,9 +1,7 @@
 {
   "phone": "9255820000",
   "whatsapp": "919255820000",
-  "reviewCount": 238,
-  "kundliReviewCount": 24,
-  "reviewRating": "5.0",
+  "reviewRating": "4.9",
   "social": {
     "facebook": "https://facebook.com/manojwifiinternetsonipat",
     "instagram": "https://www.instagram.com/manojwifiinternet.in",
@@ -14,5 +12,6 @@
     "sulekha": "https://tinyurl.com/sulekha-airtel-wifi",
     "youtube": "https://youtube.com/@manojwifiinternet"
   },
-  "businessNameHtml": "MANOJ <span>AIRTEL</span> WI-FI INTERNET"
+  "businessNameHtml": "MANOJ <span>AIRTEL</span> WI-FI INTERNET",
+  "kundliRating": "4.9"
 }

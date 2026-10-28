@@ -306,32 +306,18 @@ loadJSON('data/settings.json').then(s => {
     document.querySelectorAll('.js-logo').forEach(el => { el.innerHTML = s.businessNameHtml; });
   }
 
-  // Review count/rating — single source of truth from settings.json
-  if (s.reviewCount) {
-    const rc = s.reviewCount;
-    const rating = s.reviewRating || '5.0';
-    const badge = document.getElementById('trustReviewBadge');
-    if (badge) badge.textContent = `⭐ ${rating} (${rc}+ Reviews)`;
-    const readoutNum = document.getElementById('readoutReviewNum');
-    if (readoutNum) { readoutNum.setAttribute('data-count', rc); readoutNum.textContent = rc; }
-    const aboutHeading = document.getElementById('aboutReviewHeading');
-    if (aboutHeading) aboutHeading.textContent = `${rc}+ Verified Google Reviews`;
-    const reviewsHeading = document.getElementById('reviewsHeading');
-    if (reviewsHeading) reviewsHeading.textContent = `${rc}+ verified reviews from Sonipat customers`;
-    const whySub = document.getElementById('whyReviewSub');
-    if (whySub) whySub.textContent = `${rc}+ customer reviews`;
-    const whyHeading = document.getElementById('whyReviewHeading');
-    if (whyHeading) whyHeading.textContent = `${rating}★ Google Rating`;
-    const storeS = document.getElementById('storeReviewSonipat');
-    if (storeS) storeS.textContent = `${rc}+`;
-  }
-  if (s.kundliReviewCount) {
-    const kc = s.kundliReviewCount;
-    const storeK = document.getElementById('storeReviewKundli');
-    if (storeK) storeK.textContent = `${kc}+`;
-    const kLine = document.getElementById('kundliReviewLine');
-    if (kLine) kLine.textContent = `Our Kundli office has ${kc}+ Google reviews from local customers.`;
-  }
+  // Rating only (no review counts) — single source of truth from settings.json
+  const rating = s.reviewRating || '4.9';
+  const kRating = s.kundliRating || '4.9';
+  const setT = (id, t) => { const el = document.getElementById(id); if (el) el.textContent = t; };
+  setT('trustReviewBadge', `⭐ ${rating} Google Rating`);
+  setT('aboutReviewHeading', `Rated ${rating}★ on Google`);
+  setT('reviewsHeading', `Rated ${rating}★ on Google by Sonipat customers`);
+  setT('whyReviewHeading', `${rating}★ Google Rating`);
+  setT('whyReviewSub', 'Trusted by local customers');
+  setT('storeReviewSonipat', `${rating}★`);
+  setT('storeReviewKundli', `${kRating}★`);
+  setT('kundliReviewLine', `Our Kundli office is rated ${kRating}★ on Google by local customers.`);
 
   const row = document.getElementById('socialRow');
   const links = {

@@ -135,9 +135,8 @@ collections:
         fields:
           - {label: "Phone Number", name: "phone", widget: "string"}
           - {label: "WhatsApp Number (with 91)", name: "whatsapp", widget: "string"}
-          - {label: "Sonipat office Google Review Count (update this after checking GMB — rest of site updates automatically)", name: "reviewCount", widget: "number"}
-          - {label: "Kundli office Google Review Count", name: "kundliReviewCount", widget: "number", required: false}
-          - {label: "Google Review Rating (e.g. 5.0)", name: "reviewRating", widget: "string"}
+          - {label: "Sonipat office Google Rating (e.g. 4.9) — no review count shown on site", name: "reviewRating", widget: "string"}
+          - {label: "Kundli office Google Rating (e.g. 4.9)", name: "kundliRating", widget: "string"}
           - {label: "Business Name (HTML allowed)", name: "businessNameHtml", widget: "string"}
           - label: "Social Links"
             name: "social"

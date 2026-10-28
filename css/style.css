@@ -301,6 +301,8 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
 .mobile-bottom-nav a.mbn-whatsapp{color:#0F7A36;}
 .mobile-bottom-nav a.mbn-call{background:var(--ink);color:#fff;margin:6px 6px 6px 0;border-radius:10px;}
 .mobile-bottom-nav a.mbn-call .mbn-icon{color:#fff;}
+.mobile-bottom-nav a.mbn-call{flex:1.7;font-size:.72rem;white-space:nowrap;}
+
 
 /* Header quick-access "Plans" pill next to hamburger (mobile only) */
 .header-plans-pill{display:none;}
