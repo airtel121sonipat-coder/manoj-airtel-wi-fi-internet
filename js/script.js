@@ -1,5 +1,19 @@
 // ===== Helper: fetch JSON safely (path-aware for subfolders like /blog/) =====
 const DATA_BASE = window.location.pathname.includes('/blog/') ? '../' : '';
+
+// ===== Meta Pixel + WhatsApp page-tag helpers =====
+const PAGE_TAG = (() => {
+  const path = window.location.pathname;
+  let base = path.split('/').filter(Boolean).pop() || 'index';
+  base = base.replace(/\.html$/, '');
+  const cap = (a) => a.map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('-');
+  if (path.includes('/blog/')) return 'Website-Blog-' + cap(base.split('-').slice(0, 3));
+  if (base === 'index') return 'Website-Home';
+  if (base.indexOf('airtel-fiber-') === 0) base = base.slice('airtel-fiber-'.length);
+  return 'Website-' + cap(base.split('-'));
+})();
+function tagMsg(m) { return String(m).indexOf('[Website-') > -1 ? String(m) : m + ' [' + PAGE_TAG + ']'; }
+function fbContact() { try { if (typeof fbq === 'function') fbq('track', 'Contact'); } catch (e) {} }
 async function loadJSON(path) {
   const fullPath = DATA_BASE + path;
   try {
@@ -21,7 +35,7 @@ if (leadForm) {
     const phone = document.getElementById('leadPhone').value.trim();
     const service = document.getElementById('leadService').value;
     const msg = `Hello, my name is ${name} (${phone}). I'm interested in ${service}. Please call me back.`;
-    window.open(`https://wa.me/919255820000?text=${encodeURIComponent(msg)}`, '_blank');
+    fbContact(); window.open(`https://wa.me/919255820000?text=${encodeURIComponent(tagMsg(msg))}`, '_blank');
   });
 }
 
@@ -45,7 +59,7 @@ function renderPlanCard(p) {
       <div class="plan-price">${p.price}<small>${p.period}</small></div>
       <ul class="plan-features">${p.features.map(f => `<li>✔️ ${f}</li>`).join('')}</ul>
       ${ottHtml}
-      <a href="https://wa.me/919255820000?text=${encodeURIComponent(msg)}" class="btn btn-primary" style="width:100%;text-align:center;display:block" target="_blank" rel="noopener">Book This Plan</a>
+      <a href="https://wa.me/919255820000?text=${encodeURIComponent(tagMsg(msg))}" class="btn btn-primary" style="width:100%;text-align:center;display:block" target="_blank" rel="noopener">Book This Plan</a>
     </div>`;
 }
 
@@ -97,7 +111,7 @@ if (areaSearchInput) {
     btn.addEventListener('click', () => {
       const area = btn.dataset.area;
       const msg = `Hi Manoj Airtel, please check Airtel Fiber/AirFiber availability in ${area}.`;
-      window.open(`https://wa.me/919255820000?text=${encodeURIComponent(msg)}`, '_blank');
+      fbContact(); window.open(`https://wa.me/919255820000?text=${encodeURIComponent(tagMsg(msg))}`, '_blank');
     });
   });
 }
@@ -157,7 +171,7 @@ loadJSON('data/services.json').then(data => {
     const galleryItems = galleryData && galleryData.items;
     grid.innerHTML = items.map(s => {
       const imgItem = findCmsImage(galleryItems, s.cmsTitle);
-      const msg = encodeURIComponent(s.whatsappMsg || `Hi Manoj Airtel, I'm interested in ${s.title}.`);
+      const msg = encodeURIComponent(tagMsg(s.whatsappMsg || `Hi Manoj Airtel, I'm interested in ${s.title}.`));
       const fitClass = imgItem && imgItem.fit === 'contain' ? ' fit-contain' : '';
       return `
       <div class="service-card">
@@ -398,7 +412,7 @@ document.querySelectorAll('.yt-embed[data-yt-id]').forEach(box => {
     if (!name || !phone) return;
     let msg = `Hello, main ${name} hoon. Mera number ${phone} hai. Please check karein ki mere area mein Airtel Fiber/AirFiber connection available hai ya nahi.`;
     if (locationText) msg += `\nMeri location: ${locationText}`;
-    window.open(`https://wa.me/919255820000?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+    fbContact(); window.open(`https://wa.me/919255820000?text=${encodeURIComponent(tagMsg(msg))}`, '_blank', 'noopener');
     if (typeof gtag === 'function') gtag('event', 'generate_lead', { event_category: 'Lead Form', event_label: 'Check Your Area Form' });
   });
 })();
@@ -408,6 +422,8 @@ document.querySelectorAll('.yt-embed[data-yt-id]').forEach(box => {
 // (plan cards + lead form are already tracked above / separately — this delegated listener
 // catches every tel:/wa.me link site-wide, including ones rendered later from JSON data).
 document.addEventListener('click', (e) => {
+  const fbLink = e.target.closest('a');
+  if (fbLink && fbLink.href && (fbLink.href.startsWith('tel:') || fbLink.href.includes('wa.me'))) fbContact();
   if (typeof gtag !== 'function') return;
   const link = e.target.closest('a');
   if (!link || !link.href) return;
