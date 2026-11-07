@@ -34,16 +34,16 @@
       "cmsTitle": "Postpaid SIM & MNP",
       "badge": "INDIVIDUAL & FAMILY",
       "title": "Postpaid SIM & MNP Porting",
-      "priceTag": "Airtel Postpaid Plans from ₹449/month",
+      "priceTag": "Airtel Postpaid Plans from ₹499/month",
       "features": [
         "Switch to Airtel (MNP) without changing your number",
-        "Free doorstep SIM delivery & on-site verification",
-        "One bill for the whole family",
-        "Bundled OTT apps on higher family plans"
+        "KYC and SIM delivery at your address by Airtel",
+        "One bill for the whole family, up to 5 SIMs",
+        "Free international roaming pack and OTT apps on the new plans"
       ],
       "ctaText": "Port My Number",
       "whatsappMsg": "Hi Manoj Airtel, I want to port my mobile number to Airtel Postpaid.",
-      "link": "postpaid.html"
+      "link": "postpaid.html#individual-family-postpaid"
     },
     {
       "cmsTitle": "Business Leased Line",
@@ -64,16 +64,16 @@
       "cmsTitle": "Corporate Postpaid Fraud Guard",
       "badge": "B2B TEAM CONNECTIONS",
       "title": "Airtel Corporate Postpaid SIMs",
-      "priceTag": "Plans from ₹349/month",
+      "priceTag": "Plans from ₹349/month + GST",
       "features": [
-        "GST input credit benefit for registered businesses",
-        "Retain existing company numbers on bulk porting",
-        "Dedicated relationship manager, one consolidated bill",
+        "GST invoice for registered businesses",
+        "Retain existing company numbers on bulk porting (minimum 5 numbers)",
+        "One consolidated bill for all employee SIMs",
         "Fraud & phishing-link protection on select plans"
       ],
       "ctaText": "Get Corporate Rates",
       "whatsappMsg": "Hi Manoj Airtel, I want to enquire about Corporate SIM plans for my employees.",
-      "link": "business-internet.html"
+      "link": "postpaid.html#corporate-postpaid"
     },
     {
       "cmsTitle": "Airtel Crystal Voice Landline",
@@ -94,14 +94,14 @@
       "cmsTitle": "PG & Hostel Wi-Fi",
       "badge": "STUDENTS & TENANTS",
       "title": "PG & Hostel Wi-Fi Connection",
-      "priceTag": "Shared & Private Room Plans",
+      "priceTag": "Wi-Fi for PG Owners & Hostels",
       "features": [
-        "High-speed Wi-Fi for PG accommodations & hostels",
-        "Flexible plans for shared or private rooms",
-        "Quick setup — ready before move-in day",
-        "Ideal for students & working professionals"
+        "Airtel Xstream Fiber or AirFiber Wi-Fi connection for PGs and hostels",
+        "Free installation and free Wi-Fi router on every plan",
+        "Feasibility checked at your address before booking",
+        "Installation usually the same day, subject to feasibility"
       ],
-      "ctaText": "Check PG Wi-Fi Plans",
+      "ctaText": "Check PG Wi-Fi Connection",
       "whatsappMsg": "Hi Manoj Airtel, I need a Wi-Fi connection for my PG/hostel room.",
       "link": "fiber.html"
     },
@@ -109,16 +109,16 @@
       "cmsTitle": "Society & Apartment Bulk Wi-Fi",
       "badge": "SOCIETIES & APARTMENTS",
       "title": "Society & Apartment Bulk Wi-Fi Connection",
-      "priceTag": "Bulk Connection Rates",
+      "priceTag": "Custom quote for your society",
       "features": [
-        "Bulk Wi-Fi & broadband setup for housing societies",
-        "Covers TDI Kingsbury & other Sonipat apartment complexes",
-        "Coordinated installation across multiple flats/towers",
+        "Broadband connections for housing societies and apartments",
+        "Serves apartment complexes in Sonipat, Kundli and TDI Kingsbury",
+        "Installation planned with Airtel's team, RWA permission needed",
         "One point of contact for the whole society"
       ],
       "ctaText": "Enquire for Your Society",
       "whatsappMsg": "Hi Manoj Airtel, I want to enquire about bulk Wi-Fi connections for our society/apartment.",
-      "link": "fiber.html"
+      "link": "blog/bulk-wifi-housing-society-sonipat.html"
     }
   ]
 }
