@@ -16,11 +16,11 @@ Manoj Airtel Wi-Fi Internet is an authorized Airtel dealer based in Sonipat, Har
 
 1. Airtel Xstream Fiber — wired fiber-to-the-home broadband, speeds up to 1 Gbps
 2. Airtel AirFiber — wireless broadband, no cable digging required, ideal where fiber cabling isn't feasible
-3. Airtel Postpaid SIM & MNP — individual and family postpaid mobile plans, number porting support
-4. Airtel Corporate Postpaid SIMs — business mobile plans with GST input credit, bulk porting, dedicated relationship manager
+3. Airtel Postpaid SIM & MNP — individual and family postpaid mobile plans from ₹499/month (new plans from 8 October 2026), number porting support
+4. Airtel Corporate Postpaid SIMs — business mobile plans with one consolidated bill, GST invoice and bulk porting (details on the Postpaid page, corporate section)
 5. Internet Leased Line (ILL) — dedicated 1:1 bandwidth for offices, factories, warehouses and IT setups
-6. PG & Hostel Wi-Fi Connection — Wi-Fi setup for PG accommodations and hostels, shared or private room plans
-7. Society & Apartment Bulk Wi-Fi Connection — bulk Wi-Fi/broadband setup for housing societies and apartment complexes (including TDI Kingsbury), coordinated installation across multiple flats/towers
+6. PG & Hostel Wi-Fi Connection — Airtel Xstream Fiber or AirFiber Wi-Fi connection for PG accommodations and hostels, feasibility checked at the address
+7. Society & Apartment Wi-Fi Connection — broadband connections for housing societies and apartment complexes (including TDI Kingsbury in Kundli); RWA permission is needed and installation is planned with Airtel's team
 
 ## Airtel Xstream Fiber plans (wired broadband)
 
@@ -44,6 +44,19 @@ Manoj Airtel Wi-Fi Internet is an authorized Airtel dealer based in Sonipat, Har
 
 Prices are indicative and plus 18% GST; installation and the Wi-Fi router are free on every plan; customers are advised to confirm current offers via phone or WhatsApp before booking.
 
+## Airtel Postpaid plans for individuals and families (new plans from 8 October 2026)
+
+Monthly rental, plus 18% GST. All six plans list unlimited data and calling, 5G Fast Lane on compatible devices, Google One 100 GB, Adobe Express Premium and one free international roaming pack a year per SIM (5 days, 5 GB data, 60 minutes of calls, 25 outgoing SMS).
+
+- ₹499/month: 1 SIM (₹589 with GST) — Xstream Play
+- ₹749/month: 2 SIMs (₹884 with GST) — Xstream Play, Amazon Prime Video, JioHotstar
+- ₹1,049/month: 3 SIMs (₹1,238 with GST) — plus Apple TV+, iCloud+, Apple Music, Apple Arcade
+- ₹1,249/month: 4 SIMs (₹1,474 with GST) — same entertainment bundle
+- ₹1,449/month: 4 SIMs (₹1,710 with GST) — same bundle plus Netflix
+- ₹1,799/month: 5 SIMs (₹2,123 with GST) — same bundle plus Netflix
+
+Number porting (MNP): send PORT and the 10-digit number to 1900 to get a UPC, share it with the dealer the same day, Airtel verifies KYC and activates the SIM. Prepaid to postpaid conversion keeps the same number. Last updated 7 November 2026.
+
 ## Airtel Corporate Postpaid SIM plans (business mobile)
 
 - ₹349/month: 30GB data, unlimited voice, Airtel Call Manager, premium app bundle
@@ -52,7 +65,7 @@ Prices are indicative and plus 18% GST; installation and the Wi-Fi router are fr
 - ₹549/month: 100GB data, unlimited voice, Tracemate, Airtel Call Manager, premium app bundle
 - ₹1,649/month: 500GB data, unlimited voice, Tracemate, Airtel Call Manager, premium app bundle
 
-Corporate benefits: GST input credit for registered businesses, retain existing company numbers on bulk porting, dedicated relationship manager, one consolidated bill, fraud & phishing-link protection on select plans.
+Corporate benefits: one consolidated bill with the company's GST details, existing company numbers can be ported (Airtel generally asks for at least 5 connections), fraud & phishing-link protection on select plans. Documents: company PAN, GST or firm registration, authorised signatory ID, employee details. Full details: https://manojairtelwifiinternet.in/postpaid.html#corporate-postpaid
 
 ## Frequently asked questions
 

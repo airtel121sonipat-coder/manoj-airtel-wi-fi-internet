@@ -354,6 +354,18 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
   .readout{gap:1.2rem;}
 }
 
+
+/* poster + compare additions */
+section[id]{scroll-margin-top:80px;}
+.lead{max-width:760px;margin:0 auto 1rem;text-align:center;}
+.poster-fig{margin:1.6rem auto 0;max-width:560px;text-align:center;}
+.poster-fig img{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line);}
+.poster-fig figcaption{font-size:.82rem;color:var(--slate);margin-top:.6rem;}
+.compare-table{min-width:0;}
+.compare-table th,.compare-table td{white-space:normal;text-align:left;min-width:150px;vertical-align:top;}
+.plan-table th:first-child{background:var(--ink);color:#fff;}
+.compare-table td:first-child,.compare-table th:first-child{position:static;min-width:105px;}
+.compare-table td,.compare-table th{min-width:170px;}
 </style>
 <script type="application/ld+json">
 {
@@ -408,7 +420,7 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
     <div class="wrap hero-inner">
       <p class="eyebrow">For Offices &amp; Enterprises</p>
       <h1>Dedicated leased line internet, <em>built for uptime.</em></h1>
-      <p class="hero-sub">Internet Leased Line (ILL) and static IP for offices, shops, and industrial units in Sonipat, Kundli, Rai Industrial Area, Murthal and Kharkhoda. Static IP for business, plus a steady broadband connection and internet connection with Airtel Xstream Fiber or Airtel AirFiber where leased line is not needed.</p>
+      <p class="hero-sub">Internet Leased Line (ILL) and static IP for offices, shops, and industrial units in Sonipat, Kundli, Rai Industrial Area, Murthal and Kharkhoda. Static IP for business, plus a steady Wi-Fi connection, broadband connection and internet connection with Airtel Xstream Fiber or Airtel AirFiber where leased line is not needed.</p>
       <div class="hero-actions">
         <a href="https://wa.me/919255820000?text=Hello%2C%20I%20want%20a%20business%20leased%20line%20quote%20%5BWebsite-Business-Internet%5D" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp for a Quote</a>
         <a href="tel:9255820000" class="btn btn-outline">Call 9255820000</a>
@@ -424,7 +436,7 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
         <div class="card"><span class="tag">Leased Line</span><h3>Dedicated ILL bandwidth</h3><p>1:1 dedicated bandwidth, not shared with neighbours — consistent speed at all hours.</p></div>
         <div class="card"><span class="tag">Networking</span><h3>Static IP</h3><p>Fixed IP address for servers, VPNs and billing software.</p></div>
         <div class="card"><span class="tag">Reliability</span><h3>Priority support</h3><p>Business connections get faster fault response than standard home plans.</p></div>
-        <div class="card"><span class="tag">Corporate</span><h3>Corporate SIM plans</h3><p>Bulk postpaid connections for teams, billed together.</p></div>
+        <div class="card"><span class="tag">Corporate</span><h3>Corporate SIM plans</h3><p>Bulk postpaid connections for teams, billed together. <a href="postpaid.html#corporate-postpaid" style="color:var(--red-dark);text-decoration:underline">See corporate SIM plans</a>.</p></div>
         <div class="card"><span class="tag">Coverage</span><h3>Industrial areas covered</h3><p>Serving Rai Industrial Area and nearby commercial belts.</p></div>
       </div>
     </div>
@@ -443,25 +455,36 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
     </div>
   </section>
 
-  <!-- COCP B2B TABLE -->
-  <section class="section">
+  <!-- ILL vs broadband -->
+  <section class="section" id="leased-line">
     <div class="wrap">
-      <p class="eyebrow center">For Businesses</p>
-      <h2 class="center">Airtel Corporate Postpaid (COCP)</h2>
-      <p class="section-note center">GST input credit benefit, one consolidated bill, and a dedicated relationship manager for your team.</p>
+      <p class="eyebrow center">Choosing the right line</p>
+      <h2 class="center">Internet Leased Line vs regular business broadband</h2>
+      <p class="lead">Most shops and small offices do well on Airtel Xstream Fiber. A leased line makes sense when many people, billing software, calls or servers depend on the connection all day.</p>
       <div class="table-scroll">
-        <table class="plan-table">
-          <tr><th>Monthly Rental</th><th>Data</th><th>Voice</th><th>Fraud Guard</th><th>Call Manager</th><th>Premium Apps</th></tr>
-          <tr class="rent-row"><td>₹349</td><td>30 GB</td><td>Unlimited</td><td>✖</td><td>✔ Included</td><td>Adobe Express</td></tr>
-          <tr class="rent-row"><td>₹399</td><td>40 GB</td><td>Unlimited</td><td>✔ Included</td><td>✔ Included</td><td>Adobe Express</td></tr>
-          <tr class="rent-row"><td>₹449</td><td>60 GB</td><td>Unlimited</td><td>✔ Included</td><td>✔ Included</td><td>Adobe Express</td></tr>
-          <tr class="rent-row"><td>₹549</td><td>100 GB</td><td>Unlimited</td><td>✔ Included</td><td>✔ Included</td><td>Adobe Express</td></tr>
-          <tr class="rent-row"><td>₹1,649</td><td>500 GB</td><td>Unlimited</td><td>✔ Included</td><td>✔ Included</td><td>Adobe Express</td></tr>
+        <table class="plan-table compare-table">
+          <tr><th>&nbsp;</th><th>Business broadband (Airtel Xstream Fiber)</th><th>Internet Leased Line (ILL)</th></tr>
+          <tr><td>Bandwidth</td><td>Plan speed up to 1 Gbps on a shared fiber network</td><td>Dedicated 1:1 bandwidth, not shared</td></tr>
+          <tr><td>Upload and download</td><td>As per the plan</td><td>Symmetric upload and download</td></tr>
+          <tr><td>Uptime terms</td><td>Standard broadband support</td><td>Airtel states a 99.5% uptime SLA for ILL; exact terms are in your service agreement</td></tr>
+          <tr><td>Static IP</td><td>On request, charges apply</td><td>Available as per the agreement</td></tr>
+          <tr><td>Best for</td><td>Shops, small offices, home offices</td><td>Offices with many users, billing or ERP software, VoIP, servers and VPN, factories</td></tr>
+          <tr><td>Pricing</td><td>Plans from ₹499 a month plus 18% GST</td><td>Custom quote, depends on bandwidth and distance</td></tr>
         </table>
       </div>
-      <p class="section-note center" style="margin-top:1rem">Fraud Guard and exact GST benefit terms depend on your current Airtel plan — confirm on WhatsApp for your business.</p>
-      <div class="center" style="margin-top:1.5rem">
-        <a href="https://wa.me/919255820000?text=Hi%20Manoj%20Airtel%2C%20I%20want%20Corporate%20Postpaid%20SIMs%20for%20my%20employees%20%5BWebsite-Business-Internet%5D" class="btn btn-primary" target="_blank" rel="noopener">Get Bulk Proposal</a>
+      <p class="section-note center" style="margin-top:1rem">Not sure which one you need? Send your address and number of users on WhatsApp and we will check feasibility first. See also our <a href="plans.html" style="color:var(--red-dark);text-decoration:underline">Airtel Xstream Fiber plans</a>.</p>
+    </div>
+  </section>
+
+  <!-- Corporate SIM intro (full corporate plans are on postpaid.html#corporate-postpaid) -->
+  <section class="section alt">
+    <div class="wrap">
+      <p class="eyebrow center">For Businesses</p>
+      <h2 class="center">Airtel Corporate Postpaid SIM for Businesses</h2>
+      <p class="lead">Businesses can enquire about employee SIM connections, bulk corporate SIM connections and corporate mobile plans with one consolidated bill. The plans, documents and corporate number porting details are on our Postpaid page.</p>
+      <div class="hero-actions" style="justify-content:center;margin:1.2rem 0 0">
+        <a href="postpaid.html#corporate-postpaid" class="btn btn-primary">View Airtel Corporate Postpaid Plans</a>
+        <a href="https://wa.me/919255820000?text=Hello%2C%20I%20want%20Airtel%20Corporate%20Postpaid%20SIMs%20for%20my%20business.%0A1%29%20Company%20name%3A%20%0A2%29%20Number%20of%20SIMs%3A%20%0A3%29%20Area%3A%20%0A%5BWebsite-Corporate-Postpaid%5D" class="btn btn-whatsapp" target="_blank" rel="noopener">Corporate SIM Enquiry</a>
       </div>
     </div>
   </section>
@@ -469,7 +492,7 @@ p{line-height:1.6;color:var(--slate);margin:0 0 1rem;}
   <section class="section ott">
     <div class="wrap" style="text-align:center">
       <h2>Get a quote in 5 minutes</h2>
-      <p style="color:#D9D7DE;max-width:560px;margin:0 auto 1rem">Send these four details on WhatsApp and we will check feasibility and share a quote. Pricing depends on bandwidth and distance.</p>
+      <p style="color:#D9D7DE;max-width:560px;margin:0 auto 1rem">Send these four details on WhatsApp and we will check feasibility and share a quote. Pricing depends on bandwidth and distance. You can also visit our authorized Airtel store in Sonipat or Kundli.</p>
       <ul style="color:#fff;list-style:none;padding:0;margin:0 auto 1.2rem;display:inline-block;text-align:left;line-height:1.7"><li>1. Your address</li><li>2. How much bandwidth you need</li><li>3. How many users</li><li>4. Whether you need a static IP</li></ul>
       <p style="color:#D9D7DE;max-width:560px;margin:0 auto 1.5rem">Uptime and fault-resolution terms for a leased line are set in Airtel's service agreement — ask us for them before you book.</p>
       <div class="hero-actions" style="justify-content:center">
