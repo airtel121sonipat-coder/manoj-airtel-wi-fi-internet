@@ -555,7 +555,7 @@ section[id],h3[id]{scroll-margin-top:80px;}
       <p class="section-note center" style="margin-top:1rem">Monthly rental is plus 18% GST. Benefits are as listed by Airtel; confirm your final plan and current offers on WhatsApp before booking.</p>
 
       <figure class="poster-fig">
-        <a href="assets/photos/airtel-postpaid-plans-2026.webp" target="_blank" rel="noopener"><img src="assets/photos/airtel-postpaid-plans-2026.webp" width="1000" height="564" loading="lazy" decoding="async" alt="Airtel postpaid plan chart from 8 October 2026: ₹499 individual, ₹749 family of 2, ₹1,049 family of 3, ₹1,249 and ₹1,449 family of 4, ₹1,799 family of 5, with GST-inclusive rentals, Fast Lane, international roaming pack, Google One 100 GB, Adobe Express Premium and OTT benefits"></a>
+        <a href="assets/photos/airtel-postpaid-plans-2026.webp" target="_blank" rel="noopener"><img src="assets/photos/airtel-postpaid-plans-2026.webp" width="1000" height="634" loading="lazy" decoding="async" alt="Airtel postpaid plan chart from 8 October 2026: ₹499 individual, ₹749 family of 2, ₹1,049 family of 3, ₹1,249 and ₹1,449 family of 4, ₹1,799 family of 5, with GST-inclusive rentals, Fast Lane, international roaming pack, Google One 100 GB, Adobe Express Premium and OTT benefits"></a>
         <figcaption>Airtel postpaid plan chart (new plans from 8 October 2026). Rentals with 18% GST: ₹589, ₹884, ₹1,238, ₹1,474, ₹1,710 and ₹2,123.</figcaption>
       </figure>
 
@@ -704,6 +704,19 @@ section[id],h3[id]{scroll-margin-top:80px;}
         });
       });
     });
+  })();
+  (function(){
+    var h = location.hash; if (!h || h.length < 2) return;
+    var t; try { t = document.querySelector(h); } catch (e) { return; }
+    if (!t) return;
+    var stop = false, tries = 0;
+    ['wheel','touchstart','keydown'].forEach(function(e){ window.addEventListener(e, function(){ stop = true; }, {once:true, passive:true}); });
+    (function wait(){
+      if (stop) return;
+      var tb = document.getElementById('postpaidTable');
+      if ((tb && tb.rows.length) || tries++ > 30) { setTimeout(function(){ if (!stop) t.scrollIntoView(); }, 150); return; }
+      setTimeout(wait, 100);
+    })();
   })();
   </script>
 
