@@ -42,10 +42,10 @@ if (leadForm) {
 // ===== OTT brand colors =====
 const OTT_COLORS = {
   "Netflix": "#E50914",
-  "Amazon Prime Video": "#00A8E1",
+  "Amazon Prime Video": "#0A6EA8",
   "Disney+ Hotstar": "#0F142D",
   "Apple TV": "#1C1C1E",
-  "Airtel Xstream Play": "#ED1C24"
+  "Airtel Xstream Play": "#D4121A"
 };
 
 function renderPlanCard(p) {
