@@ -79,7 +79,7 @@ Q: Do you provide same-day installation?
 A: About 70% of installations are completed the same day. For farther locations the installation is completed by the next day. Subject to feasibility at the customer's address.
 
 Q: Do I need to visit the store?
-A: No. On a call or online booking, service is given at the customer's location (door-to-door), including online booking for Panipat, Rohtak, Karnal, Kurukshetra and Hisar. For these five cities the actual installation is carried out by Airtel's own technicians.
+A: No. On a call or online booking, service is given at the customer's location (door-to-door), including online booking for Panipat, Rohtak, Karnal, Kurukshetra, Hisar, Bahadurgarh, Jhajjar, Ambala, Bhiwani, Yamunanagar and Jind. For these cities the actual installation is carried out by Airtel's own technicians.
 
 Q: Is installation free? Is the router free?
 A: Yes. Installation and the Wi-Fi router are free on every Airtel plan.
@@ -94,10 +94,24 @@ Q: What are the support hours?
 A: Sonipat office 6:00 AM to 11:00 PM daily; Kundli office 7:00 AM to 7:30 PM. Call or WhatsApp 9255820000.
 
 Q: Which areas do you serve?
-A: Sonipat, Kundli, Rai, Murthal, Kharkhoda, Ganaur, Gohana, Barhi and surrounding areas. Online booking also available for Panipat, Rohtak, Karnal, Kurukshetra and Hisar.
+A: Sonipat, Kundli, Rai, Murthal, Kharkhoda, Ganaur, Gohana, Barhi and surrounding areas. Online booking also available for Panipat, Rohtak, Karnal, Kurukshetra, Hisar, Bahadurgarh, Jhajjar, Ambala, Bhiwani, Yamunanagar and Jind.
 
 Q: Can I port my existing number to Airtel Postpaid?
 A: Yes — Mobile Number Portability (MNP) is supported; customers can bring their current number to an Airtel postpaid plan.
+
+## City pages (online booking cities)
+
+Manoj Airtel Wi-Fi Internet is based in Sonipat and Kundli. For the Haryana cities below, customers book by call, WhatsApp or online; Airtel's own local team does the installation and service, and there is no office in these cities. Installation, the Wi-Fi router, connection shifting and technical support are free. Fiber plans start at Rs 499 a month plus 18% GST. Installation timing depends on location and feasibility (nearby areas can be same day, farther locations usually the next day).
+
+- Bahadurgarh (https://manojairtelwifiinternet.in/airtel-fiber-bahadurgarh.html): Airtel Xstream Fiber, AirFiber, leased line (ILL), static IP, postpaid SIM, number porting (MNP) and corporate SIM. Focus: Modern Industrial Estate (MIE) factories, Sectors 2, 6, 9 and 9A, Model Town, metro-side homes, Delhi-Rohtak Road (NH-9), Najafgarh Road, Jhajjar Road.
+- Jhajjar (https://manojairtelwifiinternet.in/airtel-fiber-jhajjar.html): Fiber, AirFiber, business broadband, leased line, corporate SIM. Focus: offices near the Mini Secretariat and District Courts, clinics near the Civil Hospital, students, colonies, Rewari-Rohtak road.
+- Ambala (https://manojairtelwifiinternet.in/airtel-fiber-ambala.html): Fiber, AirFiber, business broadband, leased line, static IP, corporate SIM. Focus: Ambala Cantt (Nicholson Road, Sadar Bazaar, Mahesh Nagar, Babyal Road) and Ambala City (Model Town, Sectors 7-10), wholesale and retail markets, GT Road (NH-44), Saha.
+- Bhiwani (https://manojairtelwifiinternet.in/airtel-fiber-bhiwani.html): Fiber, AirFiber, business broadband, static IP, corporate SIM. Focus: students and coaching centres, HUDA Sectors 13 and 23, Hansi Road, Rohtak Road, Loharu Road, Circular Road, local bazaars.
+- Yamunanagar and Jagadhri (https://manojairtelwifiinternet.in/airtel-fiber-yamunanagar.html): Fiber, AirFiber, leased line, static IP, corporate SIM. Focus: plywood, timber, metal and manufacturing units, Industrial Area, Workshop Road, Radaur Road, Model Town, Sector 17.
+- Jind (https://manojairtelwifiinternet.in/airtel-fiber-jind.html): Fiber, AirFiber, broadband, corporate SIM, leased line, static IP. Focus: new WiFi connections for shops, clinics, students and families; Rani Talab, Patiala Chowk, Urban Estate (Sectors 7, 9, 10, 11), Safidon Road, Gohana Road, Rohtak Road.
+- Earlier city pages: Panipat, Rohtak, Karnal, Kurukshetra and Hisar (airtel-fiber-<city>.html), also Fiber and AirFiber booking only.
+
+Postpaid SIM and number porting (MNP) are offered for Sonipat and Bahadurgarh. Corporate SIM and leased line enquiries are taken on the business pages for all cities, subject to Airtel's feasibility and verification.
 
 ## Contact and hours
 
@@ -110,4 +124,4 @@ A: Yes — Mobile Number Portability (MNP) is supported; customers can bring the
 - Kundli Google Maps: https://maps.app.goo.gl/B1J26tUgZTFd3dyC9?g_st=ac
 - Google rating: 4.9 (Sonipat office), 4.9 (Kundli office)
 
-Last updated: 2026-10-20
+Last updated: 2026-11-22
