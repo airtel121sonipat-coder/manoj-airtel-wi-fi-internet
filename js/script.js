@@ -43,7 +43,7 @@ if (leadForm) {
 const OTT_COLORS = {
   "Netflix": "#E50914",
   "Amazon Prime Video": "#0A6EA8",
-  "Disney+ Hotstar": "#0F142D",
+  "JioHotstar": "#0F142D",
   "Apple TV": "#1C1C1E",
   "Airtel Xstream Play": "#D4121A"
 };
@@ -331,6 +331,7 @@ loadJSON('data/settings.json').then(s => {
   setT('whyReviewSub', 'Trusted by local customers');
   setT('storeReviewSonipat', `${rating}★`);
   setT('storeReviewKundli', `${kRating}★`);
+  setT('kundliReviewHeading', `Rated ${kRating}★ on Google at our Kundli office`);
   setT('kundliReviewLine', `Our Kundli office is rated ${kRating}★ on Google by local customers.`);
 
   const row = document.getElementById('socialRow');
