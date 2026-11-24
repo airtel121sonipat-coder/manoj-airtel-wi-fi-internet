@@ -5,3 +5,11 @@
 # /postpaid (no extension) and /postpaid.html were both resolving live.
 # Force the clean URL to redirect to the canonical .html file.
 /postpaid  /postpaid.html  301
+
+# Merged location pages (Nov 2026)
+/rai.html  /murthal.html  301
+/rai  /murthal.html  301
+/tdi-kingsbury.html  /kundli.html  301
+/tdi-kingsbury  /kundli.html  301
+/barhi.html  /ganaur.html  301
+/barhi  /ganaur.html  301
